@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.journalism.mapper.ArticleMapper">
+  <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Article">
+    <id column="Id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" property="content" />
+    <result column="c_id" property="cId"></result>
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+  </resultMap>
+  <delete id="deleteArticle" parameterType="Integer">
+    delete from article where c_id=#{cId}
+  </delete>
+  <insert id="addArticle" parameterType="java.util.List">
+     insert into article (title, content,url, addtime,c_id)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (#{item.title},#{item.content},#{item.url},now(),#{item.cId})
+    </foreach>
+  </insert>
+  <select id="getArticle" resultMap="BaseResultMap" parameterType="Integer">
+    select * from article where id=#{id}
+  </select>
+  <select id="getArticleAll" resultMap="BaseResultMap" parameterType="Integer">
+    select * from article
+  </select>
+  <update id="update" parameterType="java.util.List">
+    update article set content=#{content} where id=#{id}
+  </update>
+</mapper>

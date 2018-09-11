@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.journalism.mapper.CategoryMapper">
+  <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Category">
+    <id column="c_id" jdbcType="INTEGER" property="cId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+
+  <resultMap id="getArticleCategoryResult" type="com.clj.journalism.bean.Category">
+    <id column="c_id" jdbcType="INTEGER" property="cId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <collection property="article" ofType="com.clj.journalism.bean.Article">
+      <id column="Id" jdbcType="INTEGER" property="id" />
+      <result column="title" jdbcType="VARCHAR" property="title" />
+      <result column="content" property="content" />
+      <result column="c_id" property="cId"></result>
+      <result column="url" jdbcType="VARCHAR" property="url" />
+      <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+    </collection>
+  </resultMap>
+  <select id="getCategroyArticleAll" resultMap="getArticleCategoryResult">
+    select c.c_id,a.id,c.name,a.title,a.content,a.addtime from category c
+    left join article a on c.c_id=a.c_id order by a.id desc
+  </select>
+
+  <select id="getCategroyArticleByCid" resultMap="getArticleCategoryResult" parameterType="Integer">
+    select c.c_id,a.id,c.name,a.title,a.content,a.addtime from category c
+    left join article a on c.c_id=a.c_id where a.c_id=#{cId} order by a.id desc
+  </select>
+
+</mapper>
