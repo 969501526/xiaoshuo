@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.journalism.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.clj.journalism.bean.User">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="openId" jdbcType="VARCHAR" property="openid" />
+    <result column="headurl" jdbcType="VARCHAR" property="headurl" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+  </resultMap>
+
+  <insert id="insert" parameterType="com.clj.journalism.bean.User">
+    insert into user (openId, headurl,
+      nickname, province, city
+      )
+    values (#{openid,jdbcType=VARCHAR}, #{headurl,jdbcType=VARCHAR},
+      #{nickname,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}
+      )
+  </insert>
+<select id="getOpenId" resultMap="BaseResultMap" parameterType="java.lang.String">
+  select user_id,openId from user where openId=#{openId}
+</select>
+</mapper>

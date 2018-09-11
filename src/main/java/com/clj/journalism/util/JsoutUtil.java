@@ -31,8 +31,8 @@ public class JsoutUtil {
             //#endText > p:nth-child(2)
             Elements content = document2.select("#endText").select("p");
             article.setUrl(url);
-            String str = content.toString().replaceAll("p","view");
-            article.setContent(str);
+//            String str = content.toString().replaceAll("p","view");
+            article.setContent(content.text());
             article.setTitle(title.text());
             article.setcId(1);
             articleList.add(article);
@@ -55,11 +55,11 @@ public class JsoutUtil {
             //#epContentLeft > h1
             Elements title = document1.select("#epContentLeft").select("h1");
             Elements content = document1.select("#endText").select("p");
-            String str = content.toString().replaceAll("p","view");
+        //    String str = content.toString().replaceAll("p","view");
             article.setTitle(title.text());
             article.setUrl(url);
             article.setcId(2);
-            article.setContent(str);
+            article.setContent(content.text());
             articleList.add(article);
         }
         return articleList;
