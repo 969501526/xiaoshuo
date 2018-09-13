@@ -23,7 +23,7 @@ public class NovelUtil {
         book.setName(bookName.text());
         Elements author=document.select("#container").select("div.mainnav").select("section").select("div")
                 .select("div:nth-child(6)").select("div.bookDetail").select("dl:nth-child(2)").select("dd");
-        System.out.println("作者"+author);
+        System.out.println("作者"+author.text());
         book.setAuthor(author.text());
         //#container > div.mainnav > section > div > a > img
         Elements headUrl=document.select("#container").select("div.mainnav").select("section")
@@ -68,5 +68,17 @@ public class NovelUtil {
             novelList.add(novel);
         }
         return novelList;
+    }
+    public static List<String> getUrl(String url) throws Exception{
+        Document document = Jsoup.connect(url).get();
+        //  >  >  > :nth-child(1) > a
+        Elements elements = document.select("#navList").select("section").select("ul")
+                .select("li").select("a");
+        List<String> list = new ArrayList<String>();
+        for(Element element:elements){
+            String novelUrl = element.attr("abs:href");
+            list.add(novelUrl);
+        }
+        return list;
     }
 }

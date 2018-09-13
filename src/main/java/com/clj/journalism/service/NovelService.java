@@ -20,26 +20,65 @@ public class NovelService {
     @Autowired
     private NovelMapper novelMapper;
 
-    public String addNovel(String url) throws Exception{
+    public String addNovel(String url,Integer cId) throws Exception{
         Book book = NovelUtil.bookpc(url);
-        bookMapper.insert(book);
-        List<Novel> novel = NovelUtil.novelpc(url);
-        List<Novel> novelList = new ArrayList<Novel>();
-        Novel n = null;
-        for(Novel novel1:novel){
-            n=new Novel();
-            n.setContent(novel1.getContent());
-            n.setbId(book.getbId());
-            n.setTitle(novel1.getTitle());
-            n.setcId(1);
-            novelList.add(n);
+        List<Book> bookName = bookMapper.getBookName(book.getName());
+        if(bookName.isEmpty()){
+            book.setcId(cId);
+            bookMapper.insert(book);
+            List<Novel> novel = NovelUtil.novelpc(url);
+            List<Novel> novelList = new ArrayList<Novel>();
+            Novel n = null;
+            for(Novel novel1:novel){
+                n=new Novel();
+                n.setContent(novel1.getContent());
+                n.setbId(book.getbId());
+                n.setTitle(novel1.getTitle());
+                novelList.add(n);
+            }
+
+            novelMapper.insert(novelList);
+            System.out.println(book.getbId());
+            return "success";
+        }else{
+            return book.getName()+"已存在";
         }
 
-        novelMapper.insert(novelList);
-        System.out.println(book.getbId());
-        return "success";
+
     }
     public List<Book> getNovelAll(){
         return bookMapper.getNovelAll();
+    }
+
+    public String pcNovelAll(String url,Integer cId) throws Exception{
+        List<String> urls = NovelUtil.getUrl(url);
+        for(String str : urls){
+            System.out.println("url="+str);
+            Book book =  NovelUtil.bookpc(str);
+        if(book.getName()!=null||book.getName().equals("")) {
+            List<Book> bookName = bookMapper.getBookName(book.getName());
+            if (bookName.isEmpty()) {
+                book.setcId(cId);
+                bookMapper.insert(book);
+                List<Novel> list = NovelUtil.novelpc(str);
+                List<Novel> novelList = new ArrayList<Novel>();
+                Novel n = null;
+                for (Novel novel1 : list) {
+                    n = new Novel();
+                    n.setContent(novel1.getContent());
+                    n.setbId(book.getbId());
+                    n.setTitle(novel1.getTitle());
+                    novelList.add(n);
+                }
+                novelMapper.insert(novelList);
+                System.out.println(book.getbId());
+            } else {
+                System.out.println(book.getName() + "已存在");
+            }
+        }else {
+            System.out.println("错误的链接-跳过");
+        }
+        }
+        return "success";
     }
 }

@@ -16,13 +16,18 @@ public class NovelController {
     private NovelService novelService;
 
 
-    @RequestMapping("test")
-    public String test(String url) throws Exception{
-        return novelService.addNovel(url);
+    @RequestMapping("pcNovelOne")
+    public String test(String url,Integer cId) throws Exception{
+        return novelService.addNovel(url,cId);
     }
 
     @GetMapping("getNovelAll")
     public Msg getNovelAll(){
         return Msg.success().add("success",novelService.getNovelAll());
+    }
+
+    @RequestMapping("pcNovelAll")
+    public Msg pcNovelAll(String url,Integer cId) throws Exception{
+        return Msg.success().add("success",novelService.pcNovelAll(url,cId));
     }
 }

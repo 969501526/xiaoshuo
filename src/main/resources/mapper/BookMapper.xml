@@ -8,15 +8,18 @@
     <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
     <result column="brief" jdbcType="VARCHAR" property="brief" />
     <result column="author" jdbcType="VARCHAR" property="author"></result>
+      <result column="c_id" jdbcType="VARCHAR" property="cId"></result>
   </resultMap>
 
   <insert id="insert" useGeneratedKeys="true" keyProperty="bId" parameterType="com.clj.journalism.bean.Book">
     insert into book (name, state,
-      headUrl, brief,author)
+      headUrl, brief,author,c_id)
     values (#{name,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR},
-      #{headurl,jdbcType=VARCHAR}, #{brief,jdbcType=VARCHAR},#{author})
+      #{headurl,jdbcType=VARCHAR}, #{brief,jdbcType=VARCHAR},#{author},#{cId})
   </insert>
-
+<select id="getBookName" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select b_id,name from book where name=#{name}
+</select>
   <resultMap id="getBookNovelResult" type="com.clj.journalism.bean.Book">
     <id column="b_id" jdbcType="INTEGER" property="bId" />
     <result column="name" jdbcType="VARCHAR" property="name" />

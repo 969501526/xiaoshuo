@@ -17,6 +17,8 @@ public class Book {
 
     private String author;
 
+    private Integer cId;
+
     public Integer getbId() {
         return bId;
     }
@@ -71,6 +73,14 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public Integer getcId() {
+        return cId;
+    }
+
+    public void setcId(Integer cId) {
+        this.cId = cId;
     }
 
     @Override

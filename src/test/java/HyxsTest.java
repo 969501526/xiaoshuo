@@ -11,21 +11,19 @@ import java.util.List;
 public class HyxsTest {
     //http://www.quanshuwang.com/list/12_1.html
     public static void main(String[] args) throws Exception{
-        List<String> urls = HyxsTest.getUrl("http://www.quanshuwang.com/list/12_1.html");
+        List<String> urls = HyxsTest.getUrl("http://www.quanshuwang.com/list/1_1.html");
         for(String str : urls){
             System.out.println(str);
-        //  Book book =  HyxsTest.bookpc(str);
-//          List<Novel> list = HyxsTest.novelpc(str);
+         Book book =  HyxsTest.bookpc(str);
+          List<Novel> list = HyxsTest.novelpc(str);
         }
     }
 
     public static List<String> getUrl(String url) throws Exception{
         Document document = Jsoup.connect(url).get();
-        // >  >  >  >  >  >  >  >  > a
-        Elements elements = document.select("#wrapper").select("div.g-bdw.g-bdw-1").select("div")
-                .select("div").select("div").select("div.g-mnc.yd-book-rank-container.yd-rank-container.yd-grid2col-standard-container")
-                .select("div.contents.yd-rank-content.yd-book-content").select("div").select("div:nth-child(1)")
-                .select("a");
+        //  >  >  > :nth-child(1) > a
+        Elements elements = document.select("#navList").select("section").select("ul")
+                .select("li").select("a");
         List<String> list = new ArrayList<String>();
         for(Element element:elements){
             String novelUrl = element.attr("abs:href");

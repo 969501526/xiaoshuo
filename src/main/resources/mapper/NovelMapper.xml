@@ -9,10 +9,10 @@
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
   </resultMap>
   <insert id="insert" parameterType="java.util.List">
-    insert into novel (c_id, title,b_id, content)
+    insert into novel (title,b_id, content)
     values
     <foreach collection="list" index="index" item="item" separator=",">
-      (#{item.cId,jdbcType=INTEGER}, #{item.title,jdbcType=VARCHAR},
+      (#{item.title,jdbcType=VARCHAR},
       #{item.bId,jdbcType=INTEGER}, #{item.content,jdbcType=LONGVARCHAR})
     </foreach>
   </insert>
