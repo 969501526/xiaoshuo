@@ -2,6 +2,7 @@ package com.clj.journalism.service;
 
 import com.clj.journalism.bean.Article;
 import com.clj.journalism.mapper.ArticleMapper;
+import com.clj.journalism.mapper.BookMapper;
 import com.clj.journalism.util.JsoutUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +14,9 @@ public class ArticleService {
 
     @Autowired
     private ArticleMapper articleMapper;
+
+    @Autowired
+    private BookMapper bookMapper;
 
     public Integer addArticle() throws Exception{
         return articleMapper.addArticle(JsoutUtil.pc());

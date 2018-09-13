@@ -8,4 +8,6 @@ public interface CategoryMapper {
     List<Category> getCategroyArticleAll();
 
     List<Category> getCategroyArticleByCid(Integer cId);
+
+    List<Category> getNovelAll();
 }

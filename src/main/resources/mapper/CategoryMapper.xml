@@ -5,7 +5,9 @@
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
-
+  <insert id="insert">
+    insert into category()
+  </insert>
   <resultMap id="getArticleCategoryResult" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
@@ -22,10 +24,21 @@
     select c.c_id,a.id,c.name,a.title,a.content,a.addtime from category c
     left join article a on c.c_id=a.c_id order by a.id desc
   </select>
+  <resultMap id="getNovelCategoryResult" type="com.clj.journalism.bean.Category">
+    <id column="c_id" jdbcType="INTEGER" property="cId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <collection property="novel" ofType="com.clj.journalism.bean.Novel">
+      <id column="n_id" jdbcType="INTEGER" property="nId" />
+      <result column="c_id" jdbcType="INTEGER" property="cId" />
+      <result column="title" jdbcType="VARCHAR" property="title" />
+      <result column="b_id" jdbcType="INTEGER" property="bId" />
+      <result column="content" jdbcType="INTEGER" property="content" />
+    </collection>
+  </resultMap>
 
-  <select id="getCategroyArticleByCid" resultMap="getArticleCategoryResult" parameterType="Integer">
-    select c.c_id,a.id,c.name,a.title,a.content,a.addtime from category c
-    left join article a on c.c_id=a.c_id where a.c_id=#{cId} order by a.id desc
+  <select id="getNovelAll" resultMap="getNovelCategoryResult">
+    select n_id,c_id,b.name,b.state,b.headUrl,b.brief,n.title,n.content from novel n
+    inner join book b on n.b_id=b.b_id
   </select>
 
 </mapper>

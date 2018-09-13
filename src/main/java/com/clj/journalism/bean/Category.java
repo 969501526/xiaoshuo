@@ -9,6 +9,8 @@ public class Category {
 
     private List<Article> article;
 
+    private List<Novel> novel;
+
     public Integer getcId() {
         return cId;
     }
@@ -31,5 +33,13 @@ public class Category {
 
     public void setArticle(List<Article> article) {
         this.article = article;
+    }
+
+    public List<Novel> getNovel() {
+        return novel;
+    }
+
+    public void setNovel(List<Novel> novel) {
+        this.novel = novel;
     }
 }

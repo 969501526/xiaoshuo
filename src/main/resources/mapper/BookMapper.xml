@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.journalism.mapper.BookMapper">
+  <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Book">
+    <id column="b_id" jdbcType="INTEGER" property="bId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="state" jdbcType="VARCHAR" property="state" />
+    <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
+    <result column="brief" jdbcType="VARCHAR" property="brief" />
+    <result column="author" jdbcType="VARCHAR" property="author"></result>
+  </resultMap>
+
+  <insert id="insert" useGeneratedKeys="true" keyProperty="bId" parameterType="com.clj.journalism.bean.Book">
+    insert into book (name, state,
+      headUrl, brief,author)
+    values (#{name,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR},
+      #{headurl,jdbcType=VARCHAR}, #{brief,jdbcType=VARCHAR},#{author})
+  </insert>
+
+  <resultMap id="getBookNovelResult" type="com.clj.journalism.bean.Book">
+    <id column="b_id" jdbcType="INTEGER" property="bId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="state" jdbcType="VARCHAR" property="state" />
+    <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
+    <result column="brief" jdbcType="VARCHAR" property="brief" />
+    <collection property="novel" ofType="com.clj.journalism.bean.Novel">
+      <id column="n_id" jdbcType="INTEGER" property="nId" />
+      <result column="c_id" jdbcType="INTEGER" property="cId" />
+      <result column="title" jdbcType="VARCHAR" property="title" />
+      <result column="b_id" jdbcType="INTEGER" property="bId" />
+      <result column="content" jdbcType="INTEGER" property="content" />
+    </collection>
+  </resultMap>
+
+  <select id="getNovelAll" resultMap="getBookNovelResult">
+    select n.n_id,b.b_id,b.name,b.state,b.headUrl,b.brief,n.title,n.content,b.headUrl from novel n
+    inner join book b on n.b_id=b.b_id
+  </select>
+</mapper>

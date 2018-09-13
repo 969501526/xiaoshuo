@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.journalism.mapper.NovelMapper">
+  <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Novel">
+    <id column="n_id" jdbcType="INTEGER" property="nId" />
+    <result column="c_id" jdbcType="INTEGER" property="cId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="b_id" jdbcType="INTEGER" property="bId" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+  <insert id="insert" parameterType="java.util.List">
+    insert into novel (c_id, title,b_id, content)
+    values
+    <foreach collection="list" index="index" item="item" separator=",">
+      (#{item.cId,jdbcType=INTEGER}, #{item.title,jdbcType=VARCHAR},
+      #{item.bId,jdbcType=INTEGER}, #{item.content,jdbcType=LONGVARCHAR})
+    </foreach>
+  </insert>
+
+</mapper>
