@@ -12,13 +12,13 @@
   </resultMap>
 
   <insert id="insert" useGeneratedKeys="true" keyProperty="bId" parameterType="com.clj.journalism.bean.Book">
-    insert into book (name, state,
+    insert into book (bookName, state,
       headUrl, brief,author,c_id)
-    values (#{name,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR},
+    values (#{bookName,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR},
       #{headurl,jdbcType=VARCHAR}, #{brief,jdbcType=VARCHAR},#{author},#{cId})
   </insert>
 <select id="getBookName" resultMap="BaseResultMap" parameterType="java.lang.String">
-    select b_id,name from book where name=#{name}
+    select b_id,bookName from book where bookName=#{name}
 </select>
   <resultMap id="getBookNovelResult" type="com.clj.journalism.bean.Book">
     <id column="b_id" jdbcType="INTEGER" property="bId" />
@@ -36,7 +36,7 @@
   </resultMap>
 
   <select id="getNovelAll" resultMap="getBookNovelResult">
-    select n.n_id,b.b_id,b.name,b.state,b.headUrl,b.brief,n.title,n.content,b.headUrl from novel n
+    select n.n_id,b.b_id,b.bookName,b.state,b.headUrl,b.brief,n.title,n.content,b.headUrl from novel n
     inner join book b on n.b_id=b.b_id
   </select>
 </mapper>

@@ -20,5 +20,11 @@ public class CategoryService {
         return categoryMapper.getCategroyArticleByCid(cId);
     }
 
+    public Integer insert(String cName){
+        return categoryMapper.insert(cName);
+    }
 
+    public List<Category> getCategoryAll(){
+        return categoryMapper.getCategoryAll();
+    }
 }

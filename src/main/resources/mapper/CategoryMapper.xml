@@ -5,9 +5,12 @@
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="c_name" jdbcType="VARCHAR" property="cName" />
   </resultMap>
-  <insert id="insert">
-    insert into category()
+  <insert id="insert" parameterType="String">
+    insert into category(c_name) value (#{cName})
   </insert>
+  <select id="getCategoryAll" resultMap="BaseResultMap">
+    select c_id,c_name from category
+  </select>
   <resultMap id="getArticleCategoryResult" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="name" jdbcType="VARCHAR" property="name" />

@@ -16,4 +16,8 @@ public interface CategoryMapper {
     List<Category> getCategoryAndNovelAndBookBycId(Integer cId);
 
     List<Category> getBookAndNovelById(Integer bId);
+
+    Integer insert(String cName);
+
+    List<Category> getCategoryAll();
 }
