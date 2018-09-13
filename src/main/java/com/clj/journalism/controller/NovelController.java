@@ -15,7 +15,13 @@ public class NovelController {
     @Autowired
     private NovelService novelService;
 
-
+    /**
+     * 单本小说获取
+     * @param url
+     * @param cId
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("pcNovelOne")
     public String test(String url,Integer cId) throws Exception{
         return novelService.addNovel(url,cId);
@@ -26,6 +32,13 @@ public class NovelController {
         return Msg.success().add("success",novelService.getNovelAll());
     }
 
+    /**
+     * 根据小说类型获取
+     * @param url
+     * @param cId
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("pcNovelAll")
     public Msg pcNovelAll(String url,Integer cId) throws Exception{
         return Msg.success().add("success",novelService.pcNovelAll(url,cId));
