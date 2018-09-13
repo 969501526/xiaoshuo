@@ -3,7 +3,7 @@
 <mapper namespace="com.clj.journalism.mapper.BookMapper">
   <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Book">
     <id column="b_id" jdbcType="INTEGER" property="bId" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="bookName" jdbcType="VARCHAR" property="bookName" />
     <result column="state" jdbcType="VARCHAR" property="state" />
     <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
     <result column="brief" jdbcType="VARCHAR" property="brief" />
@@ -22,7 +22,7 @@
 </select>
   <resultMap id="getBookNovelResult" type="com.clj.journalism.bean.Book">
     <id column="b_id" jdbcType="INTEGER" property="bId" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="bookName" jdbcType="VARCHAR" property="bookName" />
     <result column="state" jdbcType="VARCHAR" property="state" />
     <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
     <result column="brief" jdbcType="VARCHAR" property="brief" />

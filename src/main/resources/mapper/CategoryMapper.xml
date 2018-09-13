@@ -3,7 +3,7 @@
 <mapper namespace="com.clj.journalism.mapper.CategoryMapper">
   <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="c_name" jdbcType="VARCHAR" property="cName" />
   </resultMap>
   <insert id="insert">
     insert into category()
@@ -26,19 +26,40 @@
   </select>
   <resultMap id="getNovelCategoryResult" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <collection property="novel" ofType="com.clj.journalism.bean.Novel">
-      <id column="n_id" jdbcType="INTEGER" property="nId" />
-      <result column="c_id" jdbcType="INTEGER" property="cId" />
-      <result column="title" jdbcType="VARCHAR" property="title" />
-      <result column="b_id" jdbcType="INTEGER" property="bId" />
-      <result column="content" jdbcType="INTEGER" property="content" />
+    <result column="c_name" jdbcType="VARCHAR" property="cName" />
+    <collection property="book" ofType="com.clj.journalism.bean.Book">
+      <id column="b_id" jdbcType="INTEGER" property="bId" />
+      <result column="bookName" jdbcType="VARCHAR" property="bookName" />
+      <result column="state" jdbcType="VARCHAR" property="state" />
+      <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
+      <result column="brief" jdbcType="VARCHAR" property="brief" />
+      <result column="author" jdbcType="VARCHAR" property="author"></result>
+      <result column="c_id" jdbcType="VARCHAR" property="cId"></result>
+      <collection property="novel" ofType="com.clj.journalism.bean.Novel">
+        <id column="n_id" jdbcType="INTEGER" property="nId" />
+        <result column="title" jdbcType="VARCHAR" property="title" />
+        <result column="b_id" jdbcType="INTEGER" property="bId" />
+        <result column="content" jdbcType="LONGVARCHAR" property="content" />
+      </collection>
     </collection>
   </resultMap>
 
-  <select id="getNovelAll" resultMap="getNovelCategoryResult">
-    select n_id,c_id,b.name,b.state,b.headUrl,b.brief,n.title,n.content from novel n
-    inner join book b on n.b_id=b.b_id
+  <select id="getCategoryAndNovelAndBook" resultMap="getNovelCategoryResult">
+  select c.c_id,b.b_id,n.n_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,n.title,n.content from category c
+  left join book b on b.c_id=c.c_id
+  left join novel n on n.b_id=b.b_id order by b.b_id desc
+  </select>
+  <select id="getCategoryAndNovelAndBookBycId" resultMap="getNovelCategoryResult" parameterType="Integer">
+  select c.c_id,b.b_id,n.n_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,n.title,n.content from category c
+  left join book b on b.c_id=c.c_id
+  left join novel n on n.b_id=b.b_id
+  where c.c_id=#{cId} order by b.b_id desc
   </select>
 
+  <select id="getBookAndNovelById" resultMap="getNovelCategoryResult" parameterType="Integer">
+  select c.c_id,b.b_id,n.n_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,n.title,n.content from category c
+  left join book b on b.c_id=c.c_id
+  left join novel n on n.b_id=b.b_id
+  where b.b_id=#{bId} order by b.b_id desc
+  </select>
 </mapper>

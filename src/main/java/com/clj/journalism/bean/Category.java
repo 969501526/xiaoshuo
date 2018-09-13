@@ -5,11 +5,11 @@ import java.util.List;
 public class Category {
     private Integer cId;
 
-    private String name;
+    private String cName;
 
     private List<Article> article;
 
-    private List<Novel> novel;
+    private List<Book> book;
 
     public Integer getcId() {
         return cId;
@@ -19,12 +19,12 @@ public class Category {
         this.cId = cId;
     }
 
-    public String getName() {
-        return name;
+    public String getcName() {
+        return cName;
     }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+    public void setcName(String cName) {
+        this.cName = cName;
     }
 
     public List<Article> getArticle() {
@@ -35,11 +35,11 @@ public class Category {
         this.article = article;
     }
 
-    public List<Novel> getNovel() {
-        return novel;
+    public List<Book> getBook() {
+        return book;
     }
 
-    public void setNovel(List<Novel> novel) {
-        this.novel = novel;
+    public void setBook(List<Book> book) {
+        this.book = book;
     }
 }

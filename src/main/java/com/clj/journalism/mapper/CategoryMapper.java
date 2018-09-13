@@ -10,4 +10,10 @@ public interface CategoryMapper {
     List<Category> getCategroyArticleByCid(Integer cId);
 
     List<Category> getNovelAll();
+
+    List<Category> getCategoryAndNovelAndBook();
+
+    List<Category> getCategoryAndNovelAndBookBycId(Integer cId);
+
+    List<Category> getBookAndNovelById(Integer bId);
 }

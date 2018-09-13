@@ -40,7 +40,7 @@ public class HyxsTest {
         Elements bookName=document.select("#container").select("div.mainnav").select("section")
                 .select("div").select("div.b-info").select("h1");
         System.out.println("书名"+bookName.text());
-        book.setName(bookName.text());
+        book.setBookName(bookName.text());
         Elements author=document.select("#container").select("div.mainnav").select("section").select("div")
                 .select("div:nth-child(6)").select("div.bookDetail").select("dl:nth-child(2)").select("dd");
         System.out.println("作者"+author.text());

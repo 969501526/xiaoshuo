@@ -1,8 +1,10 @@
 package com.clj.journalism.service;
 
 import com.clj.journalism.bean.Book;
+import com.clj.journalism.bean.Category;
 import com.clj.journalism.bean.Novel;
 import com.clj.journalism.mapper.BookMapper;
+import com.clj.journalism.mapper.CategoryMapper;
 import com.clj.journalism.mapper.NovelMapper;
 import com.clj.journalism.util.NovelUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +22,12 @@ public class NovelService {
     @Autowired
     private NovelMapper novelMapper;
 
+    @Autowired
+    private CategoryMapper categoryMapper;
+
     public String addNovel(String url,Integer cId) throws Exception{
         Book book = NovelUtil.bookpc(url);
-        List<Book> bookName = bookMapper.getBookName(book.getName());
+        List<Book> bookName = bookMapper.getBookName(book.getBookName());
         if(bookName.isEmpty()){
             book.setcId(cId);
             bookMapper.insert(book);
@@ -41,7 +46,7 @@ public class NovelService {
             System.out.println(book.getbId());
             return "success";
         }else{
-            return book.getName()+"已存在";
+            return book.getBookName()+"已存在";
         }
 
 
@@ -55,8 +60,8 @@ public class NovelService {
         for(String str : urls){
             System.out.println("url="+str);
             Book book =  NovelUtil.bookpc(str);
-        if(book.getName()!=null||book.getName().equals("")) {
-            List<Book> bookName = bookMapper.getBookName(book.getName());
+        if(book.getBookName()!=null||book.getBookName().equals("")) {
+            List<Book> bookName = bookMapper.getBookName(book.getBookName());
             if (bookName.isEmpty()) {
                 book.setcId(cId);
                 bookMapper.insert(book);
@@ -73,12 +78,24 @@ public class NovelService {
                 novelMapper.insert(novelList);
                 System.out.println(book.getbId());
             } else {
-                System.out.println(book.getName() + "已存在");
+                System.out.println(book.getBookName() + "已存在");
             }
         }else {
             System.out.println("错误的链接-跳过");
         }
         }
         return "success";
+    }
+
+    public List<Category> getCategoryAndNovelAndBook(){
+        return categoryMapper.getCategoryAndNovelAndBook();
+    }
+
+    public List<Category> getCategoryAndNovelAndBookBycId(Integer cId){
+        return categoryMapper.getCategoryAndNovelAndBookBycId(cId);
+    }
+
+    public List<Category> getBookAndNovelById(Integer bId){
+        return categoryMapper.getBookAndNovelById(bId);
     }
 }

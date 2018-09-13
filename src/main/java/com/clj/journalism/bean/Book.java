@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Book {
     private Integer bId;
-
-    private String name;
+    //书名别名
+    private String bookName;
 
     private String state;
 
@@ -26,13 +26,12 @@ public class Book {
     public void setbId(Integer bId) {
         this.bId = bId;
     }
-
-    public String getName() {
-        return name;
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
     public String getState() {
@@ -83,16 +82,4 @@ public class Book {
         this.cId = cId;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "bId=" + bId +
-                ", name='" + name + '\'' +
-                ", state='" + state + '\'' +
-                ", headurl='" + headurl + '\'' +
-                ", brief='" + brief + '\'' +
-                ", novel=" + novel +
-                ", author='" + author + '\'' +
-                '}';
-    }
 }
