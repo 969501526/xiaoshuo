@@ -38,7 +38,7 @@ public class CategoryController {
     }
 
     /**
-     * 添加类型
+     * 添加类型并返回类型列表
      * @param cName
      * @return
      */
