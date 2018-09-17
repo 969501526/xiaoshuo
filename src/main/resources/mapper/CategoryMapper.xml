@@ -4,12 +4,15 @@
   <resultMap id="BaseResultMap" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="c_name" jdbcType="VARCHAR" property="cName" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="pcount" jdbcType="VARCHAR" property="pcount" />
   </resultMap>
   <insert id="insert" parameterType="String">
     insert into category(c_name) value (#{cName})
   </insert>
   <select id="getCategoryAll" resultMap="BaseResultMap">
-    select c_id,c_name from category
+       select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c
+  left join book b on b.c_id=c.c_id group by c.c_name order by c.c_id
   </select>
   <resultMap id="getArticleCategoryResult" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
@@ -30,6 +33,7 @@
   <resultMap id="getNovelCategoryResult" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="c_name" jdbcType="VARCHAR" property="cName" />
+    <result column="pcount" jdbcType="VARCHAR" property="pcount" />
     <collection property="book" ofType="com.clj.journalism.bean.Book">
       <id column="b_id" jdbcType="INTEGER" property="bId" />
       <result column="bookName" jdbcType="VARCHAR" property="bookName" />
@@ -48,21 +52,20 @@
   </resultMap>
 
   <select id="getCategoryAndNovelAndBook" resultMap="getNovelCategoryResult">
-  select c.c_id,b.b_id,n.n_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,n.title,n.content from category c
-  left join book b on b.c_id=c.c_id
-  left join novel n on n.b_id=b.b_id order by b.b_id desc
+    select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c
+    left join (select * from book order by b_id desc) as b on b.c_id=c.c_id order by c.sort asc
   </select>
-  <select id="getCategoryAndNovelAndBookBycId" resultMap="getNovelCategoryResult" parameterType="Integer">
-  select c.c_id,b.b_id,n.n_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,n.title,n.content from category c
-  left join book b on b.c_id=c.c_id
-  left join novel n on n.b_id=b.b_id
-  where c.c_id=#{cId} order by b.b_id desc
+  <select id="getCategoryAndNovelAndBookBycId" resultMap="getNovelCategoryResult" parameterType="Integer">   select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c
+    left join (select * from book order by b_id desc) as b on b.c_id=c.c_id
+		where c.c_id=#{cId}
+		order by c.sort asc
   </select>
 
   <select id="getBookAndNovelById" resultMap="getNovelCategoryResult" parameterType="Integer">
-  select c.c_id,b.b_id,n.n_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,n.title,n.content from category c
-  left join book b on b.c_id=c.c_id
-  left join novel n on n.b_id=b.b_id
-  where b.b_id=#{bId} order by b.b_id desc
+    select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,(select n_id from novel n where n.b_id=#{bId} order by n_id desc limit 1) as n_id,(select title from novel n where n.b_id=#{bId} order by n_id desc limit 1) as title from category c
+    inner join book b on b.c_id=c.c_id
+    where b.b_id=#{bId} order by b.b_id desc
   </select>
+
+
 </mapper>

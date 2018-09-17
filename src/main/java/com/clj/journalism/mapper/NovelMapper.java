@@ -9,4 +9,8 @@ public interface NovelMapper {
 
     int insert(List<Novel> list);
 
+    List<Novel> getNovelRead(Integer nId);
+
+    List<Novel> getNovelByBid(Integer bId);
+
 }

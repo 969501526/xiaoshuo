@@ -17,16 +17,16 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
-    @GetMapping("getCategroyArticleAll")
-    public Msg getCategroyArticleAll(){
-        List<Category> list = categoryService.getCategroyArticleAll();
-        return Msg.success().add("success",list);
-    }
-
-    @GetMapping("getCategroyArticleById")
-    public Msg getCategroyArticleById(@RequestParam("cId") Integer cId){
-        return Msg.success().add("success",categoryService.getCategroyArticleByCid(cId));
-    }
+//    @GetMapping("getCategroyArticleAll")
+//    public Msg getCategroyArticleAll(){
+//        List<Category> list = categoryService.getCategroyArticleAll();
+//        return Msg.success().add("success",list);
+//    }
+//
+//    @GetMapping("getCategroyArticleById")
+//    public Msg getCategroyArticleById(@RequestParam("cId") Integer cId){
+//        return Msg.success().add("success",categoryService.getCategroyArticleByCid(cId));
+//    }
 
     /**
      * 类型列表

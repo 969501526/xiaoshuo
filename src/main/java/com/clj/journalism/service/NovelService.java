@@ -98,4 +98,16 @@ public class NovelService {
     public List<Category> getBookAndNovelById(Integer bId){
         return categoryMapper.getBookAndNovelById(bId);
     }
+
+    public List<Novel> getNovelRead(Integer nId){
+        return novelMapper.getNovelRead(nId);
+    }
+
+    public List<Book> getNovelCatalog(Integer bId){
+        return bookMapper.getNovelCatalog(bId);
+    }
+
+    public List<Novel> getNovelByBid(Integer bId){
+        return novelMapper.getNovelByBid(bId);
+    }
 }

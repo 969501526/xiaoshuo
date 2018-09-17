@@ -13,4 +13,6 @@ public interface BookMapper {
 
     List<Book> getBookName(String name);
 
+    List<Book> getNovelCatalog(Integer bId);
+
 }

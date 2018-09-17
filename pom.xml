@@ -127,7 +127,16 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
-
+        <!-- mybatis的分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+        <dependency>
+              <groupId>com.github.pagehelper</groupId>
+              <artifactId>pagehelper</artifactId>
+              <version>4.1.6</version>
+         </dependency>
     </dependencies>
     <build>
         <!-- 配置了很多插件 -->

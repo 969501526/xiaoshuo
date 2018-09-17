@@ -15,5 +15,10 @@
       #{item.bId,jdbcType=INTEGER}, #{item.content,jdbcType=LONGVARCHAR})
     </foreach>
   </insert>
-
+  <select id="getNovelRead" resultMap="BaseResultMap" parameterType="Integer">
+    select * from novel where n_id=#{nId}
+  </select>
+  <select id="getNovelByBid" resultMap="BaseResultMap" parameterType="Integer">
+    select * from novel where b_id=#{bId}
+  </select>
 </mapper>

@@ -11,6 +11,10 @@ public class Category {
 
     private List<Book> book;
 
+    private Integer pcount;
+
+    private String img;
+
     public Integer getcId() {
         return cId;
     }
@@ -41,5 +45,21 @@ public class Category {
 
     public void setBook(List<Book> book) {
         this.book = book;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public Integer getPcount() {
+        return pcount;
+    }
+
+    public void setPcount(Integer pcount) {
+        this.pcount = pcount;
     }
 }

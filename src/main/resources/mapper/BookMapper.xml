@@ -26,6 +26,8 @@
     <result column="state" jdbcType="VARCHAR" property="state" />
     <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
     <result column="brief" jdbcType="VARCHAR" property="brief" />
+    <result column="author" jdbcType="VARCHAR" property="author"></result>
+    <result column="c_id" jdbcType="VARCHAR" property="cId"></result>
     <collection property="novel" ofType="com.clj.journalism.bean.Novel">
       <id column="n_id" jdbcType="INTEGER" property="nId" />
       <result column="c_id" jdbcType="INTEGER" property="cId" />
@@ -35,8 +37,9 @@
     </collection>
   </resultMap>
 
-  <select id="getNovelAll" resultMap="getBookNovelResult">
-    select n.n_id,b.b_id,b.bookName,b.state,b.headUrl,b.brief,n.title,n.content,b.headUrl from novel n
-    inner join book b on n.b_id=b.b_id
+  <select id="getNovelCatalog" resultMap="getBookNovelResult" parameterType="Integer">
+    select b.b_id,n.n_id,b.bookName,n.title,b.author from book b
+    left join novel n on n.b_id=b.b_id
+    where n.b_id=#{bId}
   </select>
 </mapper>
