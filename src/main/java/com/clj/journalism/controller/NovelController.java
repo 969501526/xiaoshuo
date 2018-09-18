@@ -110,7 +110,7 @@ public class NovelController {
      * @param pageNum
      * @param pageSize
      * @param bId
-     * @return
+     * @return。
      */
     @GetMapping("getNovelBybId")
     public Msg getNovelByBid(Integer pageNum,Integer pageSize,Integer bId){

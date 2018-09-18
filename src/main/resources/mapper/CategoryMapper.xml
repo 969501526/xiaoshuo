@@ -52,8 +52,10 @@
   </resultMap>
 
   <select id="getCategoryAndNovelAndBook" resultMap="getNovelCategoryResult">
-    select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c
-    left join (select * from book order by b_id desc) as b on b.c_id=c.c_id order by c.sort asc
+    select c.c_id,b1.b_id,c.c_name,b1.bookName,b1.state,b1.headUrl,b1.brief,b1.author from (select * from book order by b_id desc) as b1
+    left join category c on b1.c_id=c.c_id
+    where(select count(*) from book as b2 where b1.c_id=b2.c_id and b1.b_id>=b2.b_id)&lt;=2
+    order by c.sort asc
   </select>
   <select id="getCategoryAndNovelAndBookBycId" resultMap="getNovelCategoryResult" parameterType="Integer">   select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c
     left join (select * from book order by b_id desc) as b on b.c_id=c.c_id

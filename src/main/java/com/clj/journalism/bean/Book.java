@@ -1,8 +1,9 @@
 package com.clj.journalism.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Book {
+public class Book implements Serializable {
     private Integer bId;
     //书名别名
     private String bookName;

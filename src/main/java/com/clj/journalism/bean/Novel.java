@@ -1,6 +1,8 @@
 package com.clj.journalism.bean;
 
-public class Novel {
+import java.io.Serializable;
+
+public class Novel implements Serializable {
     private Integer nId;
 
     private Integer cId;

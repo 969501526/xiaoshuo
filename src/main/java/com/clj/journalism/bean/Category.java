@@ -1,8 +1,9 @@
 package com.clj.journalism.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Category {
+public class Category implements Serializable {
     private Integer cId;
 
     private String cName;

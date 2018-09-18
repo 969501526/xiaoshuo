@@ -7,14 +7,21 @@ import com.clj.journalism.mapper.BookMapper;
 import com.clj.journalism.mapper.CategoryMapper;
 import com.clj.journalism.mapper.NovelMapper;
 import com.clj.journalism.util.NovelUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class NovelService {
+
+    protected static Logger logger = LoggerFactory.getLogger(NovelService.class);
 
     @Autowired
     private BookMapper bookMapper;
@@ -24,6 +31,9 @@ public class NovelService {
 
     @Autowired
     private CategoryMapper categoryMapper;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     public String addNovel(String url,Integer cId) throws Exception{
         Book book = NovelUtil.bookpc(url);
@@ -43,7 +53,7 @@ public class NovelService {
             }
 
             novelMapper.insert(novelList);
-            System.out.println(book.getbId());
+            logger.info("添加"+book.getBookName()+"成功");
             return "success";
         }else{
             return book.getBookName()+"已存在";
@@ -87,12 +97,36 @@ public class NovelService {
         return "success";
     }
 
+    /**
+     * 获取全部小说信息
+     * @return
+     */
     public List<Category> getCategoryAndNovelAndBook(){
+
         return categoryMapper.getCategoryAndNovelAndBook();
     }
 
+    /**
+     * 根据类型加载小说
+     * @param cId
+     * @return
+     */
     public List<Category> getCategoryAndNovelAndBookBycId(Integer cId){
-        return categoryMapper.getCategoryAndNovelAndBookBycId(cId);
+
+        boolean hankey=redisTemplate.hasKey("category"+cId);
+        System.out.println(hankey);
+        if(!hankey){
+            logger.info("category"+cId+"加入缓存");
+            System.out.println("==========从数据表中获得数据=========");
+            List<Category> list = categoryMapper.getCategoryAndNovelAndBookBycId(cId);
+            redisTemplate.opsForList().rightPushAll("category"+cId,list,1,TimeUnit.MINUTES);
+            List<Category> categories = redisTemplate.opsForList().range("category"+cId,0,-1);
+            return categories;
+        }else {
+            System.out.println("==========从缓存中获得数据=========");
+            List<Category> categories = redisTemplate.opsForList().range("category"+cId,0,-1);
+            return categories;
+        }
     }
 
     public List<Category> getBookAndNovelById(Integer bId){
