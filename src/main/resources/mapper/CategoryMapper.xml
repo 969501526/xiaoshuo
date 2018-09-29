@@ -5,30 +5,15 @@
     <id column="c_id" jdbcType="INTEGER" property="cId" />
     <result column="c_name" jdbcType="VARCHAR" property="cName" />
     <result column="img" jdbcType="VARCHAR" property="img" />
-    <result column="pcount" jdbcType="VARCHAR" property="pcount" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+
   </resultMap>
   <insert id="insert" parameterType="String">
     insert into category(c_name) value (#{cName})
   </insert>
   <select id="getCategoryAll" resultMap="BaseResultMap">
-       select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c
-  left join book b on b.c_id=c.c_id group by c.c_name order by c.c_id
-  </select>
-  <resultMap id="getArticleCategoryResult" type="com.clj.journalism.bean.Category">
-    <id column="c_id" jdbcType="INTEGER" property="cId" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <collection property="article" ofType="com.clj.journalism.bean.Article">
-      <id column="Id" jdbcType="INTEGER" property="id" />
-      <result column="title" jdbcType="VARCHAR" property="title" />
-      <result column="content" property="content" />
-      <result column="c_id" property="cId"></result>
-      <result column="url" jdbcType="VARCHAR" property="url" />
-      <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
-    </collection>
-  </resultMap>
-  <select id="getCategroyArticleAll" resultMap="getArticleCategoryResult">
-    select c.c_id,a.id,c.name,a.title,a.content,a.addtime from category c
-    left join article a on c.c_id=a.c_id order by a.id desc
+        select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c
+  left join book b on b.c_id=c.c_id  group by c.c_id order by c.sort asc
   </select>
   <resultMap id="getNovelCategoryResult" type="com.clj.journalism.bean.Category">
     <id column="c_id" jdbcType="INTEGER" property="cId" />
@@ -47,6 +32,7 @@
         <result column="title" jdbcType="VARCHAR" property="title" />
         <result column="b_id" jdbcType="INTEGER" property="bId" />
         <result column="content" jdbcType="LONGVARCHAR" property="content" />
+        <result column="startTitle" jdbcType="LONGVARCHAR" property="startTitle" />
       </collection>
     </collection>
   </resultMap>
@@ -57,14 +43,18 @@
     where(select count(*) from book as b2 where b1.c_id=b2.c_id and b1.b_id>=b2.b_id)&lt;=2
     order by c.sort asc
   </select>
-  <select id="getCategoryAndNovelAndBookBycId" resultMap="getNovelCategoryResult" parameterType="Integer">   select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c
+  <select id="getCategoryAndNovelAndBookBycId" resultMap="getNovelCategoryResult" parameterType="Integer">
+   select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c
     left join (select * from book order by b_id desc) as b on b.c_id=c.c_id
 		where c.c_id=#{cId}
 		order by c.sort asc
   </select>
 
   <select id="getBookAndNovelById" resultMap="getNovelCategoryResult" parameterType="Integer">
-    select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,(select n_id from novel n where n.b_id=#{bId} order by n_id desc limit 1) as n_id,(select title from novel n where n.b_id=#{bId} order by n_id desc limit 1) as title from category c
+    select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author,
+(select n_id from novel n where n.b_id=#{bId} order by n_id desc limit 1) as n_id,(select title from novel n where n.b_id=#{bId} order by n_id desc limit 1) as title,
+(select n_id from novel n where n.b_id=#{bId} order by n_id asc limit 1) as startTitle
+from category c
     inner join book b on b.c_id=c.c_id
     where b.b_id=#{bId} order by b.b_id desc
   </select>

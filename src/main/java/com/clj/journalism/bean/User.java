@@ -1,5 +1,7 @@
 package com.clj.journalism.bean;
 
+import java.util.List;
+
 public class User {
     private Integer userId;
 
@@ -12,6 +14,8 @@ public class User {
     private String province;
 
     private String city;
+
+    private List<Book> book;
 
     public Integer getUserId() {
         return userId;
@@ -60,4 +64,13 @@ public class User {
     public void setCity(String city) {
         this.city = city == null ? null : city.trim();
     }
+
+    public List<Book> getBook() {
+        return book;
+    }
+
+    public void setBook(List<Book> book) {
+        this.book = book;
+    }
+
 }

@@ -1,0 +1,204 @@
+2018-09-19 16:18:41,321  INFO JournalismApplication:48 - Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13168 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:18:41,323 DEBUG JournalismApplication:51 - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:18:41,324  INFO JournalismApplication:637 - No active profile set, falling back to default profiles: default
+2018-09-19 16:18:41,360  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31026224: startup date [Wed Sep 19 16:18:41 CST 2018]; root of context hierarchy
+2018-09-19 16:18:41,560  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2018-09-19 16:18:42,293  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-19 16:18:42,759  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e7702c1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-19 16:18:43,063  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8088 (http)
+2018-09-19 16:18:43,186  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1828 ms
+2018-09-19 16:18:43,347  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-19 16:18:43,351  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-19 16:18:43,352  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-19 16:18:43,352  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-19 16:18:43,353  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-19 16:18:43,952  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31026224: startup date [Wed Sep 19 16:18:41 CST 2018]; root of context hierarchy
+2018-09-19 16:18:43,991  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getCategoryAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.getCategoryAll()
+2018-09-19 16:18:43,993  INFO RequestMappingHandlerMapping:543 - Mapped "{[/insertCategory]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.insertCategory(java.lang.String)
+2018-09-19 16:18:43,993  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.LoginController.login(com.clj.journalism.bean.User,java.lang.String)
+2018-09-19 16:18:43,995  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelOne]}" onto public java.lang.String com.clj.journalism.controller.NovelController.test(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:18:43,995  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getBookAndNovelById],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getBookAndNovelById(java.lang.Integer)
+2018-09-19 16:18:43,996  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBybId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelByBid(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:18:43,996  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelCatalog],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelCatalog(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:18:43,996  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelRead],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelRead(java.lang.Integer)
+2018-09-19 16:18:43,997  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelAll]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.pcNovelAll(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:18:43,997  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBycId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelBycId(java.lang.Integer)
+2018-09-19 16:18:43,997  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelAll(java.lang.Integer,java.lang.Integer)
+2018-09-19 16:18:43,999  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-19 16:18:43,999  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-19 16:18:44,024  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:18:44,024  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:18:44,052  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:18:44,283  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-09-19 16:18:44,287  WARN RedisStarterDeprecationWarningAutoConfiguration:43 - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-19 16:18:44,327  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-09-19 16:18:44,371  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8088 (http)
+2018-09-19 16:18:44,374  INFO JournalismApplication:57 - Started JournalismApplication in 3.283 seconds (JVM running for 4.669)
+2018-09-19 16:19:09,421  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-19 16:19:09,448  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-09-19 16:19:10,671 DEBUG getCategoryAll:145 - ==>  Preparing: select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c left join book b on b.c_id=c.c_id group by c.c_name order by c.sort asc 
+2018-09-19 16:19:10,684 DEBUG getCategoryAll:145 - ==> Parameters: 
+2018-09-19 16:19:10,709  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-09-19 16:19:10,739  INFO SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-09-19 16:43:49,172  INFO JournalismApplication:48 - Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13088 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:43:49,174 DEBUG JournalismApplication:51 - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:43:49,175  INFO JournalismApplication:637 - No active profile set, falling back to default profiles: default
+2018-09-19 16:43:49,226  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@175e994c: startup date [Wed Sep 19 16:43:49 CST 2018]; root of context hierarchy
+2018-09-19 16:43:49,474  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2018-09-19 16:43:50,054  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-19 16:43:50,379  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75176efe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-19 16:43:50,763  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8088 (http)
+2018-09-19 16:43:50,927  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1703 ms
+2018-09-19 16:43:51,142  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-19 16:43:51,148  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-19 16:43:51,149  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-19 16:43:51,152  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-19 16:43:51,152  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-19 16:43:51,798  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@175e994c: startup date [Wed Sep 19 16:43:49 CST 2018]; root of context hierarchy
+2018-09-19 16:43:51,849  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getCategoryAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.getCategoryAll()
+2018-09-19 16:43:51,852  INFO RequestMappingHandlerMapping:543 - Mapped "{[/insertCategory]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.insertCategory(java.lang.String)
+2018-09-19 16:43:51,853  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.LoginController.login(com.clj.journalism.bean.User,java.lang.String)
+2018-09-19 16:43:51,854  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelOne]}" onto public java.lang.String com.clj.journalism.controller.NovelController.test(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:43:51,855  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getBookAndNovelById],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getBookAndNovelById(java.lang.Integer)
+2018-09-19 16:43:51,855  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelCatalog],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelCatalog(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:43:51,856  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBycId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelBycId(java.lang.Integer)
+2018-09-19 16:43:51,856  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelRead],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelRead(java.lang.Integer)
+2018-09-19 16:43:51,856  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelAll]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.pcNovelAll(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:43:51,857  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelAll(java.lang.Integer,java.lang.Integer)
+2018-09-19 16:43:51,891  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBybId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelByBid(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:43:51,893  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-19 16:43:51,893  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-19 16:43:51,923  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:43:51,923  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:43:51,957  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:43:52,252  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-09-19 16:43:52,256  WARN RedisStarterDeprecationWarningAutoConfiguration:43 - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-19 16:43:52,292  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-09-19 16:43:52,340  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8088 (http)
+2018-09-19 16:43:52,344  INFO JournalismApplication:57 - Started JournalismApplication in 3.386 seconds (JVM running for 4.878)
+2018-09-19 16:44:01,861  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-19 16:44:01,939  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 70 ms
+2018-09-19 16:44:03,403 DEBUG getCategoryAll:145 - ==>  Preparing: select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c left join book b on b.c_id=c.c_id group by c.c_name order by c.sort asc 
+2018-09-19 16:44:03,414 DEBUG getCategoryAll:145 - ==> Parameters: 
+2018-09-19 16:44:03,439  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-09-19 16:44:03,468  INFO SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-09-19 16:44:29,416  INFO JournalismApplication:48 - Starting JournalismApplication on DESKTOP-7UQS1IM with PID 14656 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:44:29,418 DEBUG JournalismApplication:51 - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:44:29,419  INFO JournalismApplication:637 - No active profile set, falling back to default profiles: default
+2018-09-19 16:44:29,459  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6700b0ac: startup date [Wed Sep 19 16:44:29 CST 2018]; root of context hierarchy
+2018-09-19 16:44:29,633  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2018-09-19 16:44:30,520  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-19 16:44:30,837  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$662cd8ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-19 16:44:31,150  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8088 (http)
+2018-09-19 16:44:31,270  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1813 ms
+2018-09-19 16:44:31,430  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-19 16:44:31,434  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-19 16:44:31,434  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-19 16:44:31,435  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-19 16:44:31,435  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-19 16:44:32,103  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6700b0ac: startup date [Wed Sep 19 16:44:29 CST 2018]; root of context hierarchy
+2018-09-19 16:44:32,151  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getCategoryAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.getCategoryAll()
+2018-09-19 16:44:32,153  INFO RequestMappingHandlerMapping:543 - Mapped "{[/insertCategory]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.insertCategory(java.lang.String)
+2018-09-19 16:44:32,154  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.LoginController.login(com.clj.journalism.bean.User,java.lang.String)
+2018-09-19 16:44:32,155  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelOne]}" onto public java.lang.String com.clj.journalism.controller.NovelController.test(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:44:32,155  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBybId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelByBid(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:44:32,156  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelAll(java.lang.Integer,java.lang.Integer)
+2018-09-19 16:44:32,156  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBycId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelBycId(java.lang.Integer)
+2018-09-19 16:44:32,156  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelAll]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.pcNovelAll(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:44:32,157  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelRead],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelRead(java.lang.Integer)
+2018-09-19 16:44:32,157  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelCatalog],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelCatalog(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:44:32,157  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getBookAndNovelById],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getBookAndNovelById(java.lang.Integer)
+2018-09-19 16:44:32,159  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-19 16:44:32,160  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-19 16:44:32,189  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:44:32,189  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:44:32,221  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:44:32,456  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-09-19 16:44:32,460  WARN RedisStarterDeprecationWarningAutoConfiguration:43 - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-19 16:44:32,498  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-09-19 16:44:32,543  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8088 (http)
+2018-09-19 16:44:32,547  INFO JournalismApplication:57 - Started JournalismApplication in 3.383 seconds (JVM running for 4.819)
+2018-09-19 16:44:34,582  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-19 16:44:34,609  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-09-19 16:44:35,843 DEBUG getCategoryAll:145 - ==>  Preparing: select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c left join book b on b.c_id=c.c_id group by c.c_id order by c.sort asc 
+2018-09-19 16:44:35,855 DEBUG getCategoryAll:145 - ==> Parameters: 
+2018-09-19 16:44:35,879 DEBUG getCategoryAll:145 - <==      Total: 8
+2018-09-19 16:59:02,940  INFO JournalismApplication:48 - Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7416 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:59:02,942 DEBUG JournalismApplication:51 - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:59:02,942  INFO JournalismApplication:637 - No active profile set, falling back to default profiles: default
+2018-09-19 16:59:02,981  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4431f2b8: startup date [Wed Sep 19 16:59:02 CST 2018]; root of context hierarchy
+2018-09-19 16:59:03,206  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2018-09-19 16:59:03,683  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-19 16:59:04,012  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a036119e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-19 16:59:04,323  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8088 (http)
+2018-09-19 16:59:04,447  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1469 ms
+2018-09-19 16:59:04,615  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-19 16:59:04,620  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-19 16:59:04,620  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-19 16:59:04,621  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-19 16:59:04,621  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-19 16:59:05,235  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4431f2b8: startup date [Wed Sep 19 16:59:02 CST 2018]; root of context hierarchy
+2018-09-19 16:59:05,278  INFO RequestMappingHandlerMapping:543 - Mapped "{[/insertCategory]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.insertCategory(java.lang.String)
+2018-09-19 16:59:05,280  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getCategoryAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.getCategoryAll()
+2018-09-19 16:59:05,281  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.LoginController.login(com.clj.journalism.bean.User,java.lang.String)
+2018-09-19 16:59:05,282  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelOne]}" onto public java.lang.String com.clj.journalism.controller.NovelController.test(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:59:05,282  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getBookAndNovelById],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getBookAndNovelById(java.lang.Integer)
+2018-09-19 16:59:05,283  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBycId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelBycId(java.lang.Integer)
+2018-09-19 16:59:05,283  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelAll]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.pcNovelAll(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 16:59:05,283  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelCatalog],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelCatalog(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:59:05,284  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelAll(java.lang.Integer,java.lang.Integer)
+2018-09-19 16:59:05,284  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelRead],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelRead(java.lang.Integer)
+2018-09-19 16:59:05,285  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBybId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelByBid(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 16:59:05,286  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-19 16:59:05,287  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-19 16:59:05,313  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:59:05,313  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:59:05,341  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 16:59:05,581  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-09-19 16:59:05,584  WARN RedisStarterDeprecationWarningAutoConfiguration:43 - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-19 16:59:05,621  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-09-19 16:59:05,666  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8088 (http)
+2018-09-19 16:59:05,670  INFO JournalismApplication:57 - Started JournalismApplication in 2.973 seconds (JVM running for 4.514)
+2018-09-19 16:59:14,222  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-19 16:59:14,248  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-09-19 17:00:07,812  INFO JournalismApplication:48 - Starting JournalismApplication on DESKTOP-7UQS1IM with PID 5476 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 17:00:07,813 DEBUG JournalismApplication:51 - Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 17:00:07,814  INFO JournalismApplication:637 - No active profile set, falling back to default profiles: default
+2018-09-19 17:00:07,899  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ce77705: startup date [Wed Sep 19 17:00:07 CST 2018]; root of context hierarchy
+2018-09-19 17:00:08,079  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2018-09-19 17:00:08,866  INFO RepositoryConfigurationDelegate:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-19 17:00:09,278  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96fea1c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-19 17:00:09,590  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8088 (http)
+2018-09-19 17:00:09,720  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 1823 ms
+2018-09-19 17:00:09,891  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-19 17:00:09,895  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-19 17:00:09,895  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-19 17:00:09,895  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-19 17:00:09,896  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-19 17:00:10,559  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5ce77705: startup date [Wed Sep 19 17:00:07 CST 2018]; root of context hierarchy
+2018-09-19 17:00:10,600  INFO RequestMappingHandlerMapping:543 - Mapped "{[/insertCategory]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.insertCategory(java.lang.String)
+2018-09-19 17:00:10,601  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getCategoryAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.CategoryController.getCategoryAll()
+2018-09-19 17:00:10,602  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.LoginController.login(com.clj.journalism.bean.User,java.lang.String)
+2018-09-19 17:00:10,604  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelOne]}" onto public java.lang.String com.clj.journalism.controller.NovelController.test(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 17:00:10,604  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelRead],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelRead(java.lang.Integer)
+2018-09-19 17:00:10,604  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelAll],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelAll(java.lang.Integer,java.lang.Integer)
+2018-09-19 17:00:10,605  INFO RequestMappingHandlerMapping:543 - Mapped "{[/pcNovelAll]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.pcNovelAll(java.lang.String,java.lang.Integer) throws java.lang.Exception
+2018-09-19 17:00:10,605  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBybId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelByBid(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 17:00:10,605  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelBycId],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelBycId(java.lang.Integer)
+2018-09-19 17:00:10,605  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getNovelCatalog],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getNovelCatalog(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2018-09-19 17:00:10,606  INFO RequestMappingHandlerMapping:543 - Mapped "{[/getBookAndNovelById],methods=[GET]}" onto public com.clj.journalism.bean.Msg com.clj.journalism.controller.NovelController.getBookAndNovelById(java.lang.Integer)
+2018-09-19 17:00:10,608  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-19 17:00:10,608  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-19 17:00:10,633  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 17:00:10,633  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 17:00:10,660  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-19 17:00:10,890  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-09-19 17:00:10,893  WARN RedisStarterDeprecationWarningAutoConfiguration:43 - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-19 17:00:10,931  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-09-19 17:00:10,974  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8088 (http)
+2018-09-19 17:00:10,978  INFO JournalismApplication:57 - Started JournalismApplication in 3.381 seconds (JVM running for 5.0)
+2018-09-19 17:00:42,953  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-19 17:00:43,012  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-09-19 17:00:44,334 DEBUG getCategoryAndNovelAndBookBycId:145 - ==>  Preparing: select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c left join (select * from book order by b_id desc) as b on b.c_id=c.c_id where c.c_id=? order by c.sort asc 
+2018-09-19 17:00:44,346 DEBUG getCategoryAndNovelAndBookBycId:145 - ==> Parameters: 1(Integer)
+2018-09-19 17:00:44,372 DEBUG getCategoryAndNovelAndBookBycId:145 - <==      Total: 6

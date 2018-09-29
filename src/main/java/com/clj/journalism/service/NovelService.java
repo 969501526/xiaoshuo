@@ -3,6 +3,7 @@ package com.clj.journalism.service;
 import com.clj.journalism.bean.Book;
 import com.clj.journalism.bean.Category;
 import com.clj.journalism.bean.Novel;
+import com.clj.journalism.bean.UserBook;
 import com.clj.journalism.mapper.BookMapper;
 import com.clj.journalism.mapper.CategoryMapper;
 import com.clj.journalism.mapper.NovelMapper;
@@ -31,9 +32,6 @@ public class NovelService {
 
     @Autowired
     private CategoryMapper categoryMapper;
-
-    @Autowired
-    private RedisTemplate redisTemplate;
 
     public String addNovel(String url,Integer cId) throws Exception{
         Book book = NovelUtil.bookpc(url);
@@ -112,21 +110,7 @@ public class NovelService {
      * @return
      */
     public List<Category> getCategoryAndNovelAndBookBycId(Integer cId){
-
-        boolean hankey=redisTemplate.hasKey("category"+cId);
-        System.out.println(hankey);
-        if(!hankey){
-            logger.info("category"+cId+"加入缓存");
-            System.out.println("==========从数据表中获得数据=========");
-            List<Category> list = categoryMapper.getCategoryAndNovelAndBookBycId(cId);
-            redisTemplate.opsForList().rightPushAll("category"+cId,list,1,TimeUnit.MINUTES);
-            List<Category> categories = redisTemplate.opsForList().range("category"+cId,0,-1);
-            return categories;
-        }else {
-            System.out.println("==========从缓存中获得数据=========");
-            List<Category> categories = redisTemplate.opsForList().range("category"+cId,0,-1);
-            return categories;
-        }
+        return categoryMapper.getCategoryAndNovelAndBookBycId(cId);
     }
 
     public List<Category> getBookAndNovelById(Integer bId){
@@ -144,4 +128,15 @@ public class NovelService {
     public List<Novel> getNovelByBid(Integer bId){
         return novelMapper.getNovelByBid(bId);
     }
+
+    /**
+     * 获取默认章节
+     * @param bId
+     * @return
+     */
+    public Integer getNid(Integer bId){
+        return novelMapper.getNid(bId);
+    }
+
+
 }

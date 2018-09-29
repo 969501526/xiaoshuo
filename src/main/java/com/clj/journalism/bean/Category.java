@@ -16,6 +16,8 @@ public class Category implements Serializable {
 
     private String img;
 
+    private Integer sort;
+
     public Integer getcId() {
         return cId;
     }
@@ -62,5 +64,13 @@ public class Category implements Serializable {
 
     public void setPcount(Integer pcount) {
         this.pcount = pcount;
+    }
+
+    public Integer getSort() {
+        return sort;
+    }
+
+    public void setSort(Integer sort) {
+        this.sort = sort;
     }
 }

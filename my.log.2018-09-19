@@ -1,0 +1,30 @@
+2018-09-19 16:18:41,321  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13168 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:18:41,323 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:18:41,324  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-19 16:18:44,374  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.283 seconds (JVM running for 4.669)
+2018-09-19 16:19:10,671 DEBUG getCategoryAll:145 ---- ==>  Preparing: select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c left join book b on b.c_id=c.c_id group by c.c_name order by c.sort asc 
+2018-09-19 16:19:10,684 DEBUG getCategoryAll:145 ---- ==> Parameters: 
+2018-09-19 16:43:49,172  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13088 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:43:49,174 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:43:49,175  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-19 16:43:52,344  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.386 seconds (JVM running for 4.878)
+2018-09-19 16:44:03,403 DEBUG getCategoryAll:145 ---- ==>  Preparing: select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c left join book b on b.c_id=c.c_id group by c.c_name order by c.sort asc 
+2018-09-19 16:44:03,414 DEBUG getCategoryAll:145 ---- ==> Parameters: 
+2018-09-19 16:44:29,416  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 14656 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:44:29,418 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:44:29,419  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-19 16:44:32,547  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.383 seconds (JVM running for 4.819)
+2018-09-19 16:44:35,843 DEBUG getCategoryAll:145 ---- ==>  Preparing: select c.c_id,c.c_name,(select count(*) from book where book.c_id=c.c_id) as pcount,c.img from category c left join book b on b.c_id=c.c_id group by c.c_id order by c.sort asc 
+2018-09-19 16:44:35,855 DEBUG getCategoryAll:145 ---- ==> Parameters: 
+2018-09-19 16:44:35,879 DEBUG getCategoryAll:145 ---- <==      Total: 8
+2018-09-19 16:59:02,940  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7416 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 16:59:02,942 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 16:59:02,942  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-19 16:59:05,670  INFO JournalismApplication:57 ---- Started JournalismApplication in 2.973 seconds (JVM running for 4.514)
+2018-09-19 17:00:07,812  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 5476 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-19 17:00:07,813 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-19 17:00:07,814  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-19 17:00:10,978  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.381 seconds (JVM running for 5.0)
+2018-09-19 17:00:44,334 DEBUG getCategoryAndNovelAndBookBycId:145 ---- ==>  Preparing: select c.c_id,b.b_id,c.c_name,b.bookName,b.state,b.headUrl,b.brief,b.author from category c left join (select * from book order by b_id desc) as b on b.c_id=c.c_id where c.c_id=? order by c.sort asc 
+2018-09-19 17:00:44,346 DEBUG getCategoryAndNovelAndBookBycId:145 ---- ==> Parameters: 1(Integer)
+2018-09-19 17:00:44,372 DEBUG getCategoryAndNovelAndBookBycId:145 ---- <==      Total: 6

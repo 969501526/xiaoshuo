@@ -13,4 +13,6 @@ public interface NovelMapper {
 
     List<Novel> getNovelByBid(Integer bId);
 
+    Integer getNid(Integer bId);
+
 }

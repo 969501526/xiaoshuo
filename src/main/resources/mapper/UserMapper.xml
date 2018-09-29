@@ -18,7 +18,41 @@
       #{nickname,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}
       )
   </insert>
-<select id="getOpenId" resultMap="BaseResultMap" parameterType="java.lang.String">
-  select user_id,openId from user where openId=#{openId}
+<select id="getOpenId" resultType="Integer" parameterType="java.lang.String">
+  select user_id from user where openId=#{openId}
 </select>
+<select id="getUser" parameterType="String" resultMap="BaseResultMap">
+  select * from user where openId=#{openId}
+</select>
+  <resultMap id="getUserByBookResult" type="com.clj.journalism.bean.User">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="openId" jdbcType="VARCHAR" property="openid" />
+    <result column="headurl" jdbcType="VARCHAR" property="headurl" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <collection property="book" ofType="com.clj.journalism.bean.Book">
+      <id column="b_id" jdbcType="INTEGER" property="bId" />
+      <result column="bookName" jdbcType="VARCHAR" property="bookName" />
+      <result column="state" jdbcType="VARCHAR" property="state" />
+      <result column="headUrl" jdbcType="VARCHAR" property="headurl" />
+      <result column="brief" jdbcType="VARCHAR" property="brief" />
+      <result column="author" jdbcType="VARCHAR" property="author"></result>
+      <result column="c_id" jdbcType="VARCHAR" property="cId"></result>
+      <collection property="userBook" ofType="com.clj.journalism.bean.UserBook">
+        <id column="ub_id" jdbcType="INTEGER" property="ubId" />
+        <result column="user_id" jdbcType="INTEGER" property="userId" />
+        <result column="b_id" jdbcType="INTEGER" property="bId" />
+        <result column="n_id" jdbcType="INTEGER" property="nId" />
+      </collection>
+    </collection>
+  </resultMap>
+  <select id="getUserAndBook" resultMap="getUserByBookResult" parameterType="Integer">
+   select u.user_id,b.*,ub.n_id from user_book ub
+  inner join user u on ub.user_id=u.user_id
+  inner join book b on b.b_id=ub.b_id
+  where ub.user_id=#{userId}
+  order by ub.ub_id desc
+  </select>
+
 </mapper>

@@ -8,6 +8,8 @@ import com.clj.journalism.service.CategoryService;
 import com.clj.journalism.service.NovelService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +20,8 @@ import java.util.List;
 
 @RestController
 public class NovelController {
+
+    protected static Logger logger = LoggerFactory.getLogger(NovelController.class);
 
     @Autowired
     private NovelService novelService;
@@ -52,6 +56,7 @@ public class NovelController {
      */
     @GetMapping("getNovelAll")
     public Msg getNovelAll(Integer pageNum,Integer pageSize){
+        System.out.println("11");
         return Msg.success().add("success",novelService.getCategoryAndNovelAndBook());
     }
 

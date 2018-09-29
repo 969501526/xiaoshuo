@@ -1,0 +1,807 @@
+2018-09-21 10:16:21,191  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 16488 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 10:16:21,270 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 10:16:21,270  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 10:16:27,815  INFO JournalismApplication:57 ---- Started JournalismApplication in 7.144 seconds (JVM running for 10.391)
+2018-09-21 10:16:55,946 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 10:16:55,959 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 10:16:55,984 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 10:41:06,874  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 14948 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 10:41:06,876 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 10:41:06,876  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 10:41:10,037  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.384 seconds (JVM running for 5.051)
+2018-09-21 10:59:43,667  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 1364 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 10:59:43,670 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 10:59:43,670  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 10:59:46,602  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.19 seconds (JVM running for 4.365)
+2018-09-21 11:02:05,561  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 16456 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:02:05,562 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:02:05,563  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:02:08,971  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.679 seconds (JVM running for 5.229)
+2018-09-21 11:03:10,613 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:03:10,625 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:03:10,648 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:04:33,869  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 15320 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:04:33,870 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:04:33,871  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:04:36,761  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.13 seconds (JVM running for 4.734)
+2018-09-21 11:05:38,330 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:05:38,342 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:05:38,375 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:05:38,376 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:05:38,376 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:05:38,431 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:08:07,616 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:08:07,617 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:08:07,638 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:08:07,640 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:08:07,640 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:08:07,651 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:11:06,128 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:11:06,128 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:11:06,149 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:11:06,150 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:11:06,150 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:11:06,161 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:16:55,990 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:16:55,990 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:16:55,990 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:16:55,990 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:16:55,990 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:16:56,005 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:18:14,082 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:18:14,082 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:18:14,082 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:18:14,098 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:18:14,098 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:18:14,098 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:19:08,725 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:19:08,725 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:19:08,725 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:19:08,725 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:19:08,725 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:19:08,757 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:19:43,260 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:19:43,261 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:19:43,277 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:19:43,278 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:19:43,278 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:19:43,287 DEBUG getUserAndBook:145 ---- <==      Total: 4
+2018-09-21 11:20:00,282 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:20:00,282 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:20:00,293 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:20:00,294 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:20:00,295 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:20:00,324 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:25:53,072  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 11444 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:25:53,072 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:25:53,072  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:25:56,167  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.298 seconds (JVM running for 4.52)
+2018-09-21 11:26:47,352 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:31:42,832  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 10144 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:31:42,832 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:31:42,832  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:31:45,458  INFO JournalismApplication:57 ---- Started JournalismApplication in 2.876 seconds (JVM running for 4.211)
+2018-09-21 11:31:52,624 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:32:29,334 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:32:58,427  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 1228 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:32:58,427 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:32:58,427  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:33:01,269  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.059 seconds (JVM running for 4.608)
+2018-09-21 11:33:07,647 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:35:57,823  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13952 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:35:57,823 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:35:57,839  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:36:00,676  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.056 seconds (JVM running for 4.594)
+2018-09-21 11:36:12,216 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:36:12,228 DEBUG saveShelf:145 ---- ==> Parameters: null, 23(Integer)
+2018-09-21 11:36:12,263 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 11:36:42,696  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 10556 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:36:42,698 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:36:42,699  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:36:45,347  INFO JournalismApplication:57 ---- Started JournalismApplication in 2.924 seconds (JVM running for 4.334)
+2018-09-21 11:36:49,401 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:36:49,411 DEBUG saveShelf:145 ---- ==> Parameters: null, 23(Integer)
+2018-09-21 11:36:49,457 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 11:37:14,225  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 10592 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:37:14,240 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:37:14,240  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:37:17,072  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.097 seconds (JVM running for 4.625)
+2018-09-21 11:37:19,850 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:37:19,862 DEBUG saveShelf:145 ---- ==> Parameters: null, 23(Integer)
+2018-09-21 11:37:19,907 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 11:37:43,661  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 684 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:37:43,663 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:37:43,664  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:37:46,588  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.148 seconds (JVM running for 4.637)
+2018-09-21 11:37:49,045 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:37:49,059 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 23(Integer)
+2018-09-21 11:37:49,103 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 11:38:32,457  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 14372 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 11:38:32,473 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 11:38:32,473  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 11:38:35,544  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.327 seconds (JVM running for 4.683)
+2018-09-21 11:41:34,701 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:41:34,714 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:41:34,730 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:41:34,732 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:41:34,732 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:41:34,745 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:41:49,441 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:41:49,442 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:41:49,452 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:41:49,453 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:41:49,454 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:41:49,479 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:42:06,646 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:42:06,647 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:42:06,659 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:42:06,660 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:42:06,661 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:42:06,682 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:42:16,048 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:42:16,048 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:42:16,059 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:42:16,060 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:42:16,060 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:42:16,083 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:43:35,795 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:43:35,796 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:43:35,805 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:43:35,805 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:43:35,806 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:43:35,818 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:43:52,715 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:43:52,715 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:43:52,727 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:43:52,727 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:43:52,728 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:43:52,741 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:44:51,336 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:44:51,337 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:44:51,358 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:44:51,358 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:44:51,359 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:44:51,369 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:46:41,494 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:46:41,495 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:46:41,505 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:46:41,507 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 11:46:41,508 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 11:46:41,524 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 11:56:09,399 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:56:09,477 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 11:56:09,492 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 11:56:29,964 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:56:29,964 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 11:56:29,979 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 11:56:58,734 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:56:58,734 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 11:56:58,750 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 11:57:45,581 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:57:45,581 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 11:57:45,596 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 11:58:04,598 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:58:04,598 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 11:58:04,634 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 11:59:38,826 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 11:59:38,826 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 11:59:38,840 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 11:59:38,841 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 11:59:38,841 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer)
+2018-09-21 11:59:38,879 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:00:19,740 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:00:19,741 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:00:19,754 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:00:19,755 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:00:19,755 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer)
+2018-09-21 12:00:19,818 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:00:24,430 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:00:24,431 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:00:24,441 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:01:02,387 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:01:02,387 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:01:02,398 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:01:02,399 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:01:02,399 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer)
+2018-09-21 12:01:02,449 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:13:04,759 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:04,760 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:04,772 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:04,773 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 12:13:04,774 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 12:13:04,782 DEBUG getUserAndBook:145 ---- <==      Total: 0
+2018-09-21 12:13:08,970 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:08,971 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:08,992 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:08,993 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:13:08,993 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer)
+2018-09-21 12:13:09,040 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:13:13,959 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:13,959 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:13,985 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:13,985 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:13:13,986 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer)
+2018-09-21 12:13:14,107 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:13:19,048 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:19,049 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:19,063 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:19,064 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:13:19,065 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 41(Integer)
+2018-09-21 12:13:19,119 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:13:24,636 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:24,636 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:24,648 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:24,649 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:13:24,649 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 5(Integer)
+2018-09-21 12:13:24,693 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:13:33,902 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:33,902 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:33,915 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:33,915 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:13:33,916 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 28(Integer)
+2018-09-21 12:13:33,992 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:13:36,830 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:36,830 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:36,842 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:36,843 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 12:13:36,843 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 12:13:36,860 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 12:13:57,676 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:13:57,676 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:13:57,687 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:13:57,687 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.* from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where u.user_id=? order by ub.ub_id desc 
+2018-09-21 12:13:57,688 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 12:13:57,710 DEBUG getUserAndBook:145 ---- <==      Total: 5
+2018-09-21 12:31:26,400  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 6560 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:31:26,402 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:31:26,402  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:31:29,400  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.286 seconds (JVM running for 4.58)
+2018-09-21 12:31:44,381 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:31:44,393 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:31:44,412 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:31:44,414 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 12:31:44,414 DEBUG getNid:145 ---- ==> Parameters: 28(Integer)
+2018-09-21 12:31:44,444 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 12:31:44,445 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:31:44,445 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 28(Integer)
+2018-09-21 12:31:44,489 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:32:14,987  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 12416 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:32:14,989 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:32:14,989  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:32:18,122  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.381 seconds (JVM running for 4.672)
+2018-09-21 12:33:25,699  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 2804 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:33:25,702 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:33:25,702  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:33:28,790  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.367 seconds (JVM running for 5.135)
+2018-09-21 12:33:36,418 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:33:36,428 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:33:36,452 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:34:53,615  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13948 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:34:53,617 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:34:53,617  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:34:56,697  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.338 seconds (JVM running for 4.536)
+2018-09-21 12:35:11,782 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:35:11,795 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:35:11,820 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:37:05,109  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 11628 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:37:05,112 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:37:05,112  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:37:08,092  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.243 seconds (JVM running for 4.789)
+2018-09-21 12:38:03,268 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:38:03,280 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:38:03,293 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:38:03,294 DEBUG getNid:145 ---- ==>  Preparing: select * from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 12:38:03,295 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 12:38:03,313 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 12:38:03,314 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:38:03,315 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer)
+2018-09-21 12:38:03,359 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:38:59,038 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:38:59,039 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:38:59,051 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:38:59,051 DEBUG getNid:145 ---- ==>  Preparing: select * from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 12:38:59,052 DEBUG getNid:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 12:38:59,120 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 12:38:59,121 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id) value(?,?) 
+2018-09-21 12:38:59,121 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer)
+2018-09-21 12:38:59,162 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:40:36,642  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 948 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:40:36,644 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:40:36,645  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:40:39,646  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.317 seconds (JVM running for 4.967)
+2018-09-21 12:40:53,221 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:40:53,234 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:40:53,258 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:41:12,450  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 11708 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:41:12,452 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:41:12,453  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:41:15,349  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.196 seconds (JVM running for 4.584)
+2018-09-21 12:41:45,742 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:41:45,754 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:41:45,773 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:41:45,774 DEBUG getNid:145 ---- ==>  Preparing: select * from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 12:41:45,775 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 12:41:57,698 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:41:57,699 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:41:57,719 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:49:04,549 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 12:49:04,568 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 12:49:04,568 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer), 2872(Integer)
+2018-09-21 12:49:04,606 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:55:53,836  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 9792 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:55:53,838 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:55:53,839  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:55:56,732  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.173 seconds (JVM running for 4.414)
+2018-09-21 12:56:49,806 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:56:49,817 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:56:49,845 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:56:49,846 DEBUG getNid:145 ---- ==>  Preparing: select * from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 12:56:49,846 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 12:56:50,930 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 12:56:50,935 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 12:56:50,936 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), null, null
+2018-09-21 12:56:50,974 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 12:57:06,327  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 12412 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:57:06,329 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:57:06,329  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:57:09,293  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.181 seconds (JVM running for 4.397)
+2018-09-21 12:57:15,587 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:57:15,599 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:57:15,618 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:57:27,404  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13144 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:57:27,406 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:57:27,406  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:57:30,296  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.105 seconds (JVM running for 4.526)
+2018-09-21 12:57:34,421 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:57:34,433 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:57:34,444 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:58:19,907  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7432 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:58:19,909 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:58:19,910  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:58:22,874  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.211 seconds (JVM running for 4.549)
+2018-09-21 12:58:27,207 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:58:27,218 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 12:58:27,252 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 12:58:36,280  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 17476 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 12:58:36,282 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 12:58:36,282  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 12:58:39,094  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.036 seconds (JVM running for 4.622)
+2018-09-21 12:59:33,823 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 12:59:33,833 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 12:59:33,849 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 12:59:33,850 DEBUG getNid:145 ---- ==>  Preparing: select * from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 12:59:33,851 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 12:59:34,931 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 12:59:34,932 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 12:59:34,932 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2872(Integer), null
+2018-09-21 12:59:34,986 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 13:01:19,191  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 6776 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:01:19,193 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:01:19,193  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:01:22,280  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.348 seconds (JVM running for 4.689)
+2018-09-21 13:01:47,364 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:01:47,376 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:01:47,401 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:01:47,402 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 13:01:47,403 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 13:01:47,473 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 13:02:06,223  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 9168 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:02:06,226 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:02:06,227  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:02:09,271  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.288 seconds (JVM running for 4.676)
+2018-09-21 13:02:29,521 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:02:29,533 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:02:29,559 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:02:29,560 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 13:02:29,560 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 13:02:29,596 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 13:02:29,597 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 13:02:29,598 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), null, null
+2018-09-21 13:02:29,653 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 13:03:04,815  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 2700 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:03:04,816 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:03:04,817  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:03:08,449  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.855 seconds (JVM running for 5.139)
+2018-09-21 13:03:38,555  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7196 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:03:38,557 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:03:38,557  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:03:41,437  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.142 seconds (JVM running for 4.444)
+2018-09-21 13:04:15,094 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:04:15,106 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:04:15,131 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:04:15,131 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 13:04:15,132 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 13:04:15,179 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 13:04:15,180 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 13:04:15,180 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer), 2872(Integer)
+2018-09-21 13:04:15,239 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 13:04:30,755 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:04:30,756 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:04:30,779 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:04:30,780 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id desc limit 1 
+2018-09-21 13:04:30,781 DEBUG getNid:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:04:30,827 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 13:04:30,827 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 13:04:30,828 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer), 3585(Integer)
+2018-09-21 13:04:30,879 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 13:08:06,604  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 16260 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:08:06,606 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:08:06,606  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:08:09,853  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.463 seconds (JVM running for 4.933)
+2018-09-21 13:08:28,258 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:08:28,269 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:08:28,293 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:08:28,295 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:08:28,295 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:08:28,314 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:09:45,385  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 224 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:09:45,387 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:09:45,388  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:09:48,155  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.037 seconds (JVM running for 4.24)
+2018-09-21 13:10:07,770 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:10:07,781 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:10:07,808 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:10:07,810 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:10:07,810 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:10:07,836 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:12:23,530 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:12:23,531 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:12:23,546 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:12:23,547 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:12:23,547 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:12:23,567 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:12:37,136 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:12:37,137 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:12:37,161 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:12:37,162 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:12:37,162 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:12:37,181 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:13:08,577 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:13:08,577 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:13:08,599 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:13:08,600 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:13:08,601 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:13:08,625 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:13:49,864 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:13:49,864 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:13:49,885 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:13:49,886 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:13:49,886 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:13:49,900 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:14:14,398  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 4556 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:14:14,400 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:14:14,400  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:14:17,569  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.473 seconds (JVM running for 4.958)
+2018-09-21 13:14:40,970 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:14:40,982 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:14:41,001 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:14:41,002 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 13:14:41,002 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 13:14:41,012 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 13:14:41,013 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 13:14:41,013 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer), 1(Integer)
+2018-09-21 13:14:41,054 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 13:15:00,088 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:15:00,089 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:15:00,103 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:15:00,103 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 13:15:00,104 DEBUG getNid:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:15:00,178 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 13:15:00,179 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 13:15:00,179 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer), 2873(Integer)
+2018-09-21 13:15:00,224 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 13:15:15,086 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:15:15,087 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:15:15,111 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:15:15,112 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:15:15,113 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:15:15,124 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:15:35,763 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:15:35,763 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:15:35,777 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:15:35,777 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:15:35,778 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:15:35,789 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:15:42,273 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 13:15:42,273 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 13:15:42,285 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 13:15:42,285 DEBUG getUserAndBook:145 ---- ==>  Preparing: select u.user_id,b.*,ub.n_id from user_book ub inner join user u on ub.user_id=u.user_id inner join book b on b.b_id=ub.b_id where ub.user_id=? order by ub.ub_id desc 
+2018-09-21 13:15:42,285 DEBUG getUserAndBook:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 13:15:42,300 DEBUG getUserAndBook:145 ---- <==      Total: 2
+2018-09-21 13:56:09,520  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 8372 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 13:56:09,522 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 13:56:09,522  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 13:56:12,755  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.474 seconds (JVM running for 5.151)
+2018-09-21 13:56:56,169 DEBUG update:145 ---- ==>  Preparing: update user_book set n_id=? where b_id=? 
+2018-09-21 13:56:56,182 DEBUG update:145 ---- ==> Parameters: 1(Integer), 1(Integer)
+2018-09-21 13:56:56,212 DEBUG update:145 ---- <==    Updates: 2
+2018-09-21 14:49:30,745  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 10308 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 14:49:30,747 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 14:49:30,747  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 14:49:35,608  INFO JournalismApplication:57 ---- Started JournalismApplication in 5.231 seconds (JVM running for 9.171)
+2018-09-21 14:50:44,591 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:50:44,602 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:50:44,683 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:50:44,684 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:50:44,685 DEBUG getNid:145 ---- ==> Parameters: 29(Integer)
+2018-09-21 14:50:44,755 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:50:44,756 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:50:44,758 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 29(Integer), 23577(Integer)
+2018-09-21 14:50:44,809 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:51:55,581 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:51:55,582 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:51:55,605 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:51:55,606 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:51:55,606 DEBUG getNid:145 ---- ==> Parameters: 28(Integer)
+2018-09-21 14:51:55,694 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:51:55,694 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:51:55,695 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 28(Integer), 22829(Integer)
+2018-09-21 14:51:55,749 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:52:23,322 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:52:23,323 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:52:23,338 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:52:23,338 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:52:23,719 DEBUG getNid:145 ---- ==> Parameters: 28(Integer)
+2018-09-21 14:52:23,790 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:52:23,791 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:52:23,791 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 28(Integer), 22829(Integer)
+2018-09-21 14:52:23,828 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:52:51,733 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:52:51,733 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:52:51,755 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:52:51,755 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:52:51,755 DEBUG getNid:145 ---- ==> Parameters: 28(Integer)
+2018-09-21 14:52:51,805 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:52:51,806 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:52:51,807 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 28(Integer), 22829(Integer)
+2018-09-21 14:52:51,856 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:53:17,753 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:53:17,754 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:53:17,775 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:53:17,776 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:53:17,777 DEBUG getNid:145 ---- ==> Parameters: 5(Integer)
+2018-09-21 14:53:17,820 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:53:17,821 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:53:17,822 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 5(Integer), 5284(Integer)
+2018-09-21 14:53:17,869 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:53:42,286 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:53:42,287 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:53:42,302 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:53:42,303 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:53:42,304 DEBUG getNid:145 ---- ==> Parameters: 5(Integer)
+2018-09-21 14:53:42,316 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:53:42,317 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:53:42,317 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 5(Integer), 5284(Integer)
+2018-09-21 14:53:42,378 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:54:35,498 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:54:35,498 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:54:35,522 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:54:35,523 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:54:35,523 DEBUG getNid:145 ---- ==> Parameters: 5(Integer)
+2018-09-21 14:54:35,537 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:54:35,538 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:54:35,538 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 5(Integer), 5284(Integer)
+2018-09-21 14:54:35,586 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:54:56,894 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:54:56,894 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:54:56,914 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:54:56,914 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:54:56,915 DEBUG getNid:145 ---- ==> Parameters: 5(Integer)
+2018-09-21 14:54:56,930 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:54:56,931 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:54:56,931 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 5(Integer), 5284(Integer)
+2018-09-21 14:54:56,971 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:55:23,556 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:55:23,556 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:55:23,576 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:55:23,577 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:55:23,577 DEBUG getNid:145 ---- ==> Parameters: 41(Integer)
+2018-09-21 14:55:23,686 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:55:23,687 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:55:23,687 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 41(Integer), 32589(Integer)
+2018-09-21 14:55:23,751 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:55:32,037 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:55:32,038 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 14:55:32,048 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 14:55:36,784 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:55:36,784 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 14:55:36,797 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 14:55:50,389 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:55:50,390 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 14:55:50,421 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 14:55:50,421 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 14:55:50,421 DEBUG getNid:145 ---- ==> Parameters: 2(Integer)
+2018-09-21 14:55:50,436 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 14:55:50,436 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 14:55:50,437 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 2(Integer), 2873(Integer)
+2018-09-21 14:55:50,483 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 14:55:54,110 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 14:55:54,110 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 14:55:54,131 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:09:59,678  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 9812 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:09:59,679 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:09:59,680  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:10:03,203  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.766 seconds (JVM running for 5.099)
+2018-09-21 15:10:24,451 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 15:10:24,451 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id,openId from user where openId=? 
+2018-09-21 15:10:24,465 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:10:24,465 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:10:24,485 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:10:24,485 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:10:24,486 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:10:24,486 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:10:24,487 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:10:24,487 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:10:24,506 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:10:24,506 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:10:24,507 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 15:10:24,507 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 15:10:24,507 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer), 1(Integer)
+2018-09-21 15:10:24,508 DEBUG saveShelf:145 ---- ==> Parameters: 2(Integer), 1(Integer), 1(Integer)
+2018-09-21 15:10:24,540 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 15:10:24,547 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 15:13:12,656  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 9004 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:13:12,659 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:13:12,659  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:13:15,943  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.589 seconds (JVM running for 4.943)
+2018-09-21 15:14:29,175 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:14:29,185 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:14:29,217 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:14:29,218 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:14:29,219 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:14:29,233 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:14:29,234 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 15:14:29,235 DEBUG saveShelf:145 ---- ==> Parameters: 4(Integer), 1(Integer), 1(Integer)
+2018-09-21 15:14:29,283 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 15:14:32,626 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:14:32,627 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:14:32,640 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:14:32,640 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:14:32,641 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:14:32,662 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:14:32,662 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 15:14:32,663 DEBUG saveShelf:145 ---- ==> Parameters: null, 1(Integer), 1(Integer)
+2018-09-21 15:14:32,693 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 15:14:47,652 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:14:47,653 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:14:47,675 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:14:47,675 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:14:47,676 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:14:47,690 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:14:47,691 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 15:14:47,691 DEBUG saveShelf:145 ---- ==> Parameters: null, 1(Integer), 1(Integer)
+2018-09-21 15:14:47,723 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 15:15:30,514  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 8252 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:15:30,515 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:15:30,516  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:15:33,447  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.262 seconds (JVM running for 4.555)
+2018-09-21 15:15:42,325 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:15:42,336 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:15:42,358 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:15:42,360 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:15:42,360 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:15:42,380 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:15:42,382 DEBUG saveShelf:145 ---- ==>  Preparing: insert into user_book(user_id,b_id,n_id) value(?,?,?) 
+2018-09-21 15:15:42,383 DEBUG saveShelf:145 ---- ==> Parameters: null, 1(Integer), 1(Integer)
+2018-09-21 15:15:42,419 DEBUG saveShelf:145 ---- <==    Updates: 1
+2018-09-21 15:16:27,898  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 16220 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:16:27,903 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:16:27,904  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:16:31,139  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.498 seconds (JVM running for 4.884)
+2018-09-21 15:16:38,325 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:16:38,337 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:16:38,372 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:16:38,373 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:16:38,373 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:16:38,390 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:17:34,962 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:17:34,963 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:17:34,984 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:17:34,985 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:17:34,985 DEBUG getNid:145 ---- ==> Parameters: 41(Integer)
+2018-09-21 15:17:35,085 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:17:41,308 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:17:41,309 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:17:41,318 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:17:41,320 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:17:41,320 DEBUG getNid:145 ---- ==> Parameters: 41(Integer)
+2018-09-21 15:17:41,343 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:18:14,374 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:18:14,375 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:18:14,393 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:18:14,394 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:18:14,394 DEBUG getNid:145 ---- ==> Parameters: 41(Integer)
+2018-09-21 15:18:14,475 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:18:59,742  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 11344 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:18:59,744 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:18:59,745  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:19:03,390  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.825 seconds (JVM running for 5.087)
+2018-09-21 15:19:07,470 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:19:07,483 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:19:07,495 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:19:07,496 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:19:07,497 DEBUG getNid:145 ---- ==> Parameters: 41(Integer)
+2018-09-21 15:19:07,540 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:19:25,789 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:19:25,789 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:19:25,805 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:19:25,806 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:19:25,807 DEBUG getNid:145 ---- ==> Parameters: 6(Integer)
+2018-09-21 15:19:25,820 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:19:34,834 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:19:34,835 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:19:34,847 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:19:34,848 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:19:34,848 DEBUG getNid:145 ---- ==> Parameters: 6(Integer)
+2018-09-21 15:19:34,862 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:21:10,151 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:21:10,151 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:21:10,162 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:21:10,163 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:21:10,163 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:21:10,176 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:21:44,123 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:21:44,123 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:21:44,134 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:21:44,135 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:21:44,135 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:21:44,149 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:21:52,688 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:21:52,688 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:21:52,699 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:21:52,700 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:21:52,700 DEBUG getNid:145 ---- ==> Parameters: 1(Integer)
+2018-09-21 15:21:52,710 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:22:51,571 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:22:51,572 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:22:51,583 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:22:51,583 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:22:51,584 DEBUG getNid:145 ---- ==> Parameters: 3(Integer)
+2018-09-21 15:22:51,601 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:22:54,230 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:22:54,230 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:22:54,244 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:22:54,246 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:22:54,246 DEBUG getNid:145 ---- ==> Parameters: 3(Integer)
+2018-09-21 15:22:54,258 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:23:03,857 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:23:03,859 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:23:03,871 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:23:03,871 DEBUG getNid:145 ---- ==>  Preparing: select n_id from novel where b_id=? order by n_id asc limit 1 
+2018-09-21 15:23:03,872 DEBUG getNid:145 ---- ==> Parameters: 3(Integer)
+2018-09-21 15:23:03,883 DEBUG getNid:145 ---- <==      Total: 1
+2018-09-21 15:23:47,104  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 16148 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:23:47,110 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:23:47,111  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:23:50,108  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.235 seconds (JVM running for 4.486)
+2018-09-21 15:24:31,628  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7752 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-09-21 15:24:31,630 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-09-21 15:24:31,630  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-09-21 15:24:34,568  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.174 seconds (JVM running for 4.49)
+2018-09-21 15:24:40,027 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:24:40,037 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:24:40,063 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:24:44,013 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:24:44,013 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:24:44,024 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:25:13,197 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:25:13,197 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:25:13,213 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:25:30,784 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:25:30,784 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:25:30,797 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:25:33,812 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:25:33,813 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:25:33,826 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:26:17,271 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:26:17,272 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:26:17,292 DEBUG getOpenId:145 ---- <==      Total: 0
+2018-09-21 15:26:30,784 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:26:30,784 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:26:30,799 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:26:38,872 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:26:38,873 DEBUG getOpenId:145 ---- ==> Parameters: odv4I0eEAVnUPxZ4QU3n6BRzxcw0(String)
+2018-09-21 15:26:38,885 DEBUG getOpenId:145 ---- <==      Total: 1
+2018-09-21 15:26:44,797 DEBUG getOpenId:145 ---- ==>  Preparing: select user_id from user where openId=? 
+2018-09-21 15:26:44,797 DEBUG getOpenId:145 ---- ==> Parameters: null(String)
+2018-09-21 15:26:44,813 DEBUG getOpenId:145 ---- <==      Total: 0

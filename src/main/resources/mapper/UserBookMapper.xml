@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clj.journalism.mapper.UserBookMapper">
+  <resultMap id="BaseResultMap" type="com.clj.journalism.bean.UserBook">
+    <id column="ub_id" jdbcType="INTEGER" property="ubId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="b_id" jdbcType="INTEGER" property="bId" />
+    <result column="n_id" jdbcType="INTEGER" property="nId" />
+  </resultMap>
+  <insert id="saveShelf" parameterType="com.clj.journalism.bean.UserBook">
+    insert into user_book(user_id,b_id,n_id) value(#{userId},#{bId},#{nId})
+  </insert>
+  <update id="update" parameterType="com.clj.journalism.bean.UserBook">
+    update user_book set n_id=#{nId} where b_id=#{bId} and user_id=#{userId}
+  </update>
+  <select id="getShelf" resultType="Integer" parameterType="com.clj.journalism.bean.UserBook">
+    select count(*) from user_book where user_id=#{userId} and b_id=#{bId}
+  </select>
+  <delete id="deleteShelt" parameterType="Integer">
+    delete from user_book where user_id=#{userId}
+  </delete>
+</mapper>

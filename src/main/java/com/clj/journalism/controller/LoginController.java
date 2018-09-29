@@ -21,8 +21,8 @@ public class LoginController {
     @RequestMapping("login")
     public Msg login(User user,String code){
         String openId = OpenIdUtil.oauth2GetOpenid(code);
-        List<User> list = userService.getOpenId(openId);
-        if(list.isEmpty()){
+        Integer userId = userService.getOpenId(openId);
+        if(userId==null){
             user.setOpenid(openId);
             userService.insert(user);
         }

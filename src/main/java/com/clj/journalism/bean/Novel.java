@@ -13,6 +13,8 @@ public class Novel implements Serializable {
 
     private String content;
 
+    private Integer startTitle;
+
     public Integer getnId() {
         return nId;
     }
@@ -51,5 +53,24 @@ public class Novel implements Serializable {
 
     public void setContent(String content) {
         this.content = content == null ? null : content.trim();
+    }
+
+    public Integer getStartTitle() {
+        return startTitle;
+    }
+
+    public void setStartTitle(Integer startTitle) {
+        this.startTitle = startTitle;
+    }
+
+    @Override
+    public String toString() {
+        return "Novel{" +
+                "nId=" + nId +
+                ", cId=" + cId +
+                ", title='" + title + '\'' +
+                ", bId=" + bId +
+                ", content='" + content + '\'' +
+                '}';
     }
 }

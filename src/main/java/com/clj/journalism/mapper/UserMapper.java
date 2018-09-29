@@ -9,6 +9,10 @@ public interface UserMapper {
 
     Integer insert(User user);
 
-    List<User> getOpenId(String openId);
+    Integer getOpenId(String openId);
+
+    List<User> getUserAndBook(Integer userId);
+
+    List<User> getUser(String openId);
 
 }

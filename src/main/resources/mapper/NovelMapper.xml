@@ -18,6 +18,9 @@
   <select id="getNovelRead" resultMap="BaseResultMap" parameterType="Integer">
     select * from novel where n_id=#{nId}
   </select>
+  <select id="getNid" parameterType="Integer" resultType="Integer">
+    select n_id from novel where b_id=#{bId} order by n_id asc limit 1
+  </select>
   <select id="getNovelByBid" resultMap="BaseResultMap" parameterType="Integer">
     select * from novel where b_id=#{bId}
   </select>

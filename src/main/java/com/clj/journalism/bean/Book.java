@@ -20,6 +20,8 @@ public class Book implements Serializable {
 
     private Integer cId;
 
+    private UserBook userBook;
+
     public Integer getbId() {
         return bId;
     }
@@ -83,4 +85,11 @@ public class Book implements Serializable {
         this.cId = cId;
     }
 
+    public UserBook getUserBook() {
+        return userBook;
+    }
+
+    public void setUserBook(UserBook userBook) {
+        this.userBook = userBook;
+    }
 }
