@@ -21,6 +21,12 @@ public class ArticleService {
     public Integer addArticle() throws Exception{
         return articleMapper.addArticle(JsoutUtil.pc());
     }
+
+    public List<Article> addArticles(List<Article> articles){
+        articleMapper.addArticle(articles);
+        return articles;
+    }
+
     public  Integer introduction() throws Exception{
         return articleMapper.addArticle(JsoutUtil.introduction());
     }

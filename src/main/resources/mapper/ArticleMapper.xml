@@ -6,13 +6,13 @@
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="content" property="content" />
     <result column="c_id" property="cId"></result>
-    <result column="url" jdbcType="VARCHAR" property="url" />
-    <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+    <result column="url"  property="url" />
+    <result column="addtime" property="addtime" />
   </resultMap>
   <delete id="deleteArticle" parameterType="Integer">
     delete from article where c_id=#{cId}
   </delete>
-  <insert id="addArticle" parameterType="java.util.List">
+  <insert id="addArticle" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="id">
      insert into article (title, content,url, addtime,c_id)
     values
     <foreach collection="list" item="item" index="index" separator=",">

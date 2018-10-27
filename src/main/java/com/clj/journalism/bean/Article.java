@@ -12,7 +12,7 @@ public class Article {
 
     private String url;
 
-    private Date addtime;
+    private String addtime;
 
     private Integer cId;
 
@@ -48,11 +48,11 @@ public class Article {
         this.url = url == null ? null : url.trim();
     }
 
-    public Date getAddtime() {
+    public String getAddtime() {
         return addtime;
     }
 
-    public void setAddtime(Date addtime) {
+    public void setAddtime(String addtime) {
         this.addtime = addtime;
     }
 
