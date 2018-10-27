@@ -190,3 +190,115 @@
 2018-10-27 16:48:12,263 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
 2018-10-27 16:48:12,277 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), null, 新闻标题2(String), 震惊2(String), http://baidu.com(String), null, 新闻标题3(String), 震惊3(String), http://baidu.com(String), null, 新闻标题4(String), 震惊4(String), http://baidu.com(String), null, 新闻标题5(String), 震惊5(String), http://baidu.com(String), null, 新闻标题6(String), 震惊6(String), http://baidu.com(String), null, 新闻标题7(String), 震惊7(String), http://baidu.com(String), null, 新闻标题8(String), 震惊8(String), http://baidu.com(String), null
 2018-10-27 16:48:12,310 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:32:36,037  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 10936 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:32:36,358 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:32:36,358  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:32:39,289  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.5 seconds (JVM running for 4.864)
+2018-10-27 17:33:47,096  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 304 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:33:47,098 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:33:47,099  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:33:50,079  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.239 seconds (JVM running for 4.866)
+2018-10-27 17:34:21,083  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 12300 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:34:21,085 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:34:21,086  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:34:23,802  INFO JournalismApplication:57 ---- Started JournalismApplication in 2.883 seconds (JVM running for 4.803)
+2018-10-27 17:36:34,947  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 6460 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:36:34,948 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:36:34,949  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:36:38,212  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.453 seconds (JVM running for 4.671)
+2018-10-27 17:36:50,608 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:36:50,621 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), 1(Integer), 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:36:50,655 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:37:34,365  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 3748 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:37:34,367 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:37:34,368  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:37:37,913  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.882 seconds (JVM running for 5.471)
+2018-10-27 17:37:44,602 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:37:44,616 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), 1(Integer), 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:37:44,650 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:39:43,572  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 14016 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:39:43,574 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:39:43,575  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:39:46,695  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.415 seconds (JVM running for 4.646)
+2018-10-27 17:39:51,927 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:39:51,941 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), 1(Integer), 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:39:51,975 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:41:48,731  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7596 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:41:48,733 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:41:48,734  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:41:51,928  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.421 seconds (JVM running for 4.751)
+2018-10-27 17:42:25,941  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 15248 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:42:25,943 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:42:25,943  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:42:29,150  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.458 seconds (JVM running for 5.159)
+2018-10-27 17:43:11,768  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 2668 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:43:11,795 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:43:11,796  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:43:14,904  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.509 seconds (JVM running for 5.117)
+2018-10-27 17:43:36,037  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 7628 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:43:36,039 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:43:36,040  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:43:39,553  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.723 seconds (JVM running for 5.373)
+2018-10-27 17:44:24,262  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 8128 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:44:24,264 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:44:24,265  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:44:27,792  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.774 seconds (JVM running for 5.402)
+2018-10-27 17:52:41,662  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13300 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:52:41,664 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:52:41,665  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:52:45,197  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.836 seconds (JVM running for 5.327)
+2018-10-27 17:53:24,079 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:53:24,092 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:53:24,123 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:53:46,427  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 9780 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:53:46,430 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:53:46,430  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:53:49,426  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.228 seconds (JVM running for 4.56)
+2018-10-27 17:53:55,054 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:53:55,067 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:53:55,097 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:57:02,367  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 5268 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:57:02,369 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:57:02,370  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:57:05,392  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.206 seconds (JVM running for 5.433)
+2018-10-27 17:57:14,686 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:57:14,698 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:57:14,730 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:57:14,733 DEBUG addArtiCate:145 ---- ==>  Preparing: insert into article (a_id, c_id) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) 
+2018-10-27 17:57:14,734 DEBUG addArtiCate:145 ---- ==> Parameters: null, null, 2(Integer), 2(Integer), 3(Integer), 3(Integer), 4(Integer), 4(Integer), 5(Integer), 5(Integer), 6(Integer), 6(Integer), 7(Integer), 7(Integer), 8(Integer), 8(Integer), 9(Integer), 9(Integer)
+2018-10-27 17:58:09,366  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 13496 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:58:09,370 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:58:09,370  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:58:12,482  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.43 seconds (JVM running for 4.955)
+2018-10-27 17:58:21,722 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:58:21,736 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:58:21,769 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:58:21,772 DEBUG addArtiCate:145 ---- ==>  Preparing: insert into arti_cate (a_id, c_id) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) 
+2018-10-27 17:58:21,773 DEBUG addArtiCate:145 ---- ==> Parameters: null, null, 2(Integer), 2(Integer), 3(Integer), 3(Integer), 4(Integer), 4(Integer), 5(Integer), 5(Integer), 6(Integer), 6(Integer), 7(Integer), 7(Integer), 8(Integer), 8(Integer), 9(Integer), 9(Integer)
+2018-10-27 17:58:21,810 DEBUG addArtiCate:145 ---- <==    Updates: 9
+2018-10-27 17:59:04,478  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 9732 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 17:59:04,480 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 17:59:04,481  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 17:59:08,129  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.9 seconds (JVM running for 5.351)
+2018-10-27 17:59:17,521 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:59:17,532 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:59:17,569 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:59:17,572 DEBUG addArtiCate:145 ---- ==>  Preparing: insert into arti_cate (a_id, c_id) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) 
+2018-10-27 17:59:17,573 DEBUG addArtiCate:145 ---- ==> Parameters: 2(Integer), 2(Integer), 3(Integer), 3(Integer), 4(Integer), 4(Integer), 5(Integer), 5(Integer), 6(Integer), 6(Integer), 7(Integer), 7(Integer), 8(Integer), 8(Integer), 9(Integer), 9(Integer)
+2018-10-27 17:59:17,606 DEBUG addArtiCate:145 ---- <==    Updates: 8
+2018-10-27 17:59:36,250 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) , (?,?,?,now(),?) 
+2018-10-27 17:59:36,253 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), null, 新闻标题1(String), 震惊1(String), http://baidu.com(String), 2(Integer), 新闻标题2(String), 震惊2(String), http://baidu.com(String), 3(Integer), 新闻标题3(String), 震惊3(String), http://baidu.com(String), 4(Integer), 新闻标题4(String), 震惊4(String), http://baidu.com(String), 5(Integer), 新闻标题5(String), 震惊5(String), http://baidu.com(String), 6(Integer), 新闻标题6(String), 震惊6(String), http://baidu.com(String), 7(Integer), 新闻标题7(String), 震惊7(String), http://baidu.com(String), 8(Integer), 新闻标题8(String), 震惊8(String), http://baidu.com(String), 9(Integer)
+2018-10-27 17:59:36,277 DEBUG addArticle:145 ---- <==    Updates: 9
+2018-10-27 17:59:36,279 DEBUG addArtiCate:145 ---- ==>  Preparing: insert into arti_cate (a_id, c_id) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) 
+2018-10-27 17:59:36,279 DEBUG addArtiCate:145 ---- ==> Parameters: 11(Integer), 2(Integer), 12(Integer), 3(Integer), 13(Integer), 4(Integer), 14(Integer), 5(Integer), 15(Integer), 6(Integer), 16(Integer), 7(Integer), 17(Integer), 8(Integer), 18(Integer), 9(Integer)
+2018-10-27 17:59:36,300 DEBUG addArtiCate:145 ---- <==    Updates: 8
+2018-10-27 18:05:11,246  INFO JournalismApplication:48 ---- Starting JournalismApplication on DESKTOP-7UQS1IM with PID 10520 (E:\gi\journalism\target\classes started by 69472 in E:\gi\journalism)
+2018-10-27 18:05:11,247 DEBUG JournalismApplication:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2018-10-27 18:05:11,248  INFO JournalismApplication:637 ---- No active profile set, falling back to default profiles: default
+2018-10-27 18:05:14,565  INFO JournalismApplication:57 ---- Started JournalismApplication in 3.542 seconds (JVM running for 5.019)
+2018-10-27 18:05:20,781 DEBUG addArticle:145 ---- ==>  Preparing: insert into article (title, content,url, addtime,c_id) values (?,?,?,now(),?) 
+2018-10-27 18:05:20,794 DEBUG addArticle:145 ---- ==> Parameters: 新闻标题(String), 震惊。。。。。(String), http://baidu.com(String), 1(Integer)
+2018-10-27 18:05:20,841 DEBUG addArticle:145 ---- <==    Updates: 1
+2018-10-27 18:05:20,844 DEBUG addArtiCate:145 ---- ==>  Preparing: insert into arti_cate (a_id, c_id) values (?,?) 
+2018-10-27 18:05:20,845 DEBUG addArtiCate:145 ---- ==> Parameters: 19(Integer), 1(Integer)
+2018-10-27 18:05:20,892 DEBUG addArtiCate:145 ---- <==    Updates: 1

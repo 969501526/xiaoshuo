@@ -33,7 +33,9 @@ public class Test {
                 article.setContent(sheet.getCell(1, i).getContents());
                 article.setUrl(sheet.getCell(2, i).getContents());
                 article.setAddtime(sheet.getCell(3, i).getContents());
-                article.setId(Integer.parseInt(sheet.getCell(4, i).getContents()));
+                if(sheet.getCell(4, i).getContents().length()>0){
+                    article.setcId(Integer.parseInt(sheet.getCell(4, i).getContents()));
+                }
             }
             list.add(article);
         }

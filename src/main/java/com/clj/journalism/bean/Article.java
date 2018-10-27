@@ -71,7 +71,8 @@ public class Article {
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", url='" + url + '\'' +
-                ", addtime=" + addtime +
+                ", addtime='" + addtime + '\'' +
+                ", cId=" + cId +
                 '}';
     }
 }

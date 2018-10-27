@@ -1,6 +1,8 @@
 package com.clj.journalism.service;
 
+import com.clj.journalism.bean.ArtiCate;
 import com.clj.journalism.bean.Article;
+import com.clj.journalism.mapper.ArtiCateMapper;
 import com.clj.journalism.mapper.ArticleMapper;
 import com.clj.journalism.mapper.BookMapper;
 import com.clj.journalism.util.JsoutUtil;
@@ -17,6 +19,9 @@ public class ArticleService {
 
     @Autowired
     private BookMapper bookMapper;
+
+    @Autowired
+    private ArtiCateMapper artiCateMapper;
 
     public Integer addArticle() throws Exception{
         return articleMapper.addArticle(JsoutUtil.pc());
@@ -40,5 +45,9 @@ public class ArticleService {
 
     public int update(Article article){
         return articleMapper.update(article);
+    }
+
+    public Integer addArtiCate(List<ArtiCate> artiCates){
+        return artiCateMapper.addArtiCate(artiCates);
     }
 }

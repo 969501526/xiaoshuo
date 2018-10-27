@@ -35,7 +35,7 @@ public class FileUtils {
         // String realPath = path + "/" + fileName;
 
         File dest = new File(realPath);
-        if(!dest.getName().endsWith(".xls")||dest.getName().endsWith(".xlsx")){
+        if(!dest.getName().endsWith(".xls")||!dest.getName().endsWith(".xlsx")){
             return "格式错误";
         }
         //判断文件父目录是否存在
@@ -73,9 +73,7 @@ public class FileUtils {
         for (int i = 1; i < sheet.getRows(); i++) {
             // 创建一个数组 用来存储每一列的值
             String[] str = new String[sheet.getColumns()];
-            Cell cell = null;
-            String name=null;
-            String content=null;
+
             // 列数
             article = new Article();
             for (int j = 0; j < sheet.getColumns(); j++) {
@@ -83,7 +81,9 @@ public class FileUtils {
                 article.setContent(sheet.getCell(1, i).getContents());
                 article.setUrl(sheet.getCell(2, i).getContents());
                 article.setAddtime(sheet.getCell(3, i).getContents());
-                article.setId(Integer.parseInt(sheet.getCell(4, i).getContents()));
+                if(sheet.getCell(4, i).getContents().length()>0){
+                    article.setcId(Integer.parseInt(sheet.getCell(4, i).getContents()));
+                }
             }
             list.add(article);
         }

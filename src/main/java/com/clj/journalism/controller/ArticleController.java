@@ -1,5 +1,6 @@
 package com.clj.journalism.controller;
 
+import com.clj.journalism.bean.ArtiCate;
 import com.clj.journalism.bean.Article;
 import com.clj.journalism.bean.Msg;
 import com.clj.journalism.service.ArticleService;
@@ -34,12 +35,23 @@ public class ArticleController {
         System.out.println(contentType);
         String fileName = file.getOriginalFilename();  //图片名字
         String path=FileUtils.upload(file, fileName);
+        //获取excel表数据
         List<Article> list=FileUtils.excel(path);
+        //将excel表数据添加到数据库
         List<Article> a=articleService.addArticles(list);
-        for(Article article:a){
-            System.out.println(article);
+        List<ArtiCate> zjb = new ArrayList<ArtiCate>();
+        ArtiCate artiCate = null;
+        for(int i=0;i<list.size();i++){
+           Integer cId= list.get(i).getcId();
+           if (cId!=null){
+               artiCate = new ArtiCate();
+               artiCate.setcId(cId);
+               artiCate.setaId(a.get(i).getId());
+               zjb.add(artiCate);
+           }
         }
-        return "上传成功";
+        articleService.addArtiCate(zjb);
+            return "上传成功";
     }
 
     @RequestMapping("aa")
